@@ -1,0 +1,1701 @@
+[1] "EPRv2"
+[1] "2019-07-07"
+[1] "Candidates are elected by voters grading all the candidates using the values: "
+[1] "6=Excellent, 5=Very Good, 4=Good, 3=Acceptable, 2=Poor, 1=Reject."
+[1] "The count is complete by the end of Stage 4."
+[1] "Begin Stage 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+Perform an initial count of affirmed evaluations for all candidates. This count is determined in multiple rounds by giving the candidate with the most votes at the current grade that number of votes.
+[1] "*******************************************************"
+[1] "ROUND: 1"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 1  6 1 1 1 1 1 1 1 1 1
+Voter 2  6 1 1 1 1 1 1 1 1 1
+Voter 3  6 1 1 1 1 1 1 1 1 1
+Voter 4  6 1 1 1 1 1 1 1 1 1
+Voter 5  6 1 1 1 1 1 1 1 1 1
+Voter 6  6 1 1 1 1 1 1 1 1 1
+Voter 7  6 1 1 1 1 1 1 1 1 1
+Voter 8  6 1 1 1 1 1 1 1 1 1
+Voter 9  6 1 1 1 1 1 1 1 1 1
+Voter 10 5 6 1 3 1 4 1 1 1 1
+Voter 11 5 6 1 3 1 4 1 1 1 1
+Voter 12 5 6 1 3 1 4 1 1 1 1
+Voter 13 1 6 1 1 1 1 1 1 1 1
+Voter 14 5 1 5 1 1 1 3 3 4 1
+Voter 15 5 1 5 1 1 1 3 3 4 1
+Voter 16 5 1 5 1 1 1 3 3 4 1
+Voter 17 5 1 1 1 1 1 1 1 1 1
+Voter 18 6 6 1 1 1 1 1 1 1 1
+Voter 19 6 6 1 1 1 1 1 1 1 1
+Voter 20 6 6 1 1 1 1 1 1 1 1
+Voter 21 6 6 1 1 1 1 1 1 1 1
+Voter 22 6 6 1 1 1 1 1 1 1 1
+Voter 23 6 6 1 1 1 1 1 1 1 1
+Voter 24 1 1 6 1 1 1 1 1 1 1
+Voter 25 1 1 6 1 1 1 1 1 1 1
+Voter 26 1 1 6 1 1 1 1 1 1 1
+Voter 27 1 1 6 1 1 1 1 1 1 1
+Voter 28 1 1 6 1 1 1 1 1 1 1
+Voter 29 1 1 6 1 1 1 1 1 1 1
+Voter 30 1 1 6 1 1 1 1 1 1 1
+Voter 31 1 1 1 6 1 1 1 1 1 4
+Voter 32 1 1 1 6 1 1 1 1 1 4
+Voter 33 1 1 1 6 1 1 1 1 1 4
+Voter 34 1 1 1 6 1 1 1 1 1 4
+Voter 35 1 1 1 6 1 1 1 1 1 4
+Voter 36 1 1 1 6 1 3 1 1 1 1
+Voter 37 1 1 5 1 6 1 1 1 1 1
+Voter 38 1 1 5 1 6 1 1 1 1 1
+Voter 39 1 1 5 1 6 1 1 1 1 1
+Voter 40 1 1 5 1 6 1 1 1 1 1
+Voter 41 1 1 5 1 6 1 1 1 1 1
+Voter 42 1 1 5 1 5 6 1 1 1 1
+Voter 43 1 1 5 1 5 6 1 1 1 1
+Voter 44 1 1 5 1 5 6 1 1 1 1
+Voter 45 1 1 5 1 5 6 1 1 1 1
+Voter 46 1 1 5 1 5 6 1 1 1 1
+Voter 47 1 1 5 1 5 6 1 1 1 1
+Voter 48 1 1 1 1 1 1 6 5 1 4
+Voter 49 1 1 1 1 1 1 6 5 1 4
+Voter 50 1 1 1 1 1 1 6 5 1 4
+Voter 51 1 1 1 1 1 1 6 1 1 1
+Voter 52 6 6 1 1 1 1 6 6 1 1
+Voter 53 6 6 1 1 1 1 6 6 1 1
+Voter 54 1 1 1 1 1 3 4 6 5 1
+Voter 55 1 1 1 1 1 3 4 6 5 1
+Voter 56 1 1 1 1 1 3 4 6 5 1
+Voter 57 1 1 1 1 1 3 4 6 5 1
+Voter 58 1 1 6 1 6 6 6 6 1 1
+Voter 59 1 1 6 1 6 6 6 6 1 1
+Voter 60 1 1 1 5 5 1 1 1 6 1
+Voter 61 1 1 1 5 5 1 1 1 6 1
+Voter 62 1 1 1 1 1 1 1 1 6 1
+Voter 63 1 1 6 6 1 1 1 1 6 1
+Voter 64 1 1 6 6 1 1 1 1 6 1
+Voter 65 1 1 1 6 6 1 5 5 6 1
+Voter 66 1 1 1 6 6 1 5 5 6 1
+Voter 67 1 1 1 1 1 1 1 1 1 6
+Voter 68 1 1 1 1 1 1 1 1 1 6
+Voter 69 1 1 1 1 1 1 1 1 1 1
+Voter 70 1 1 1 1 1 1 1 1 1 1
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "17" "12" "11" "10" "9"  "8"  "8"  "8"  "7"  "2"  
+[1] "The winner of round 1 is: A, with 17 affirmed evaluations."
+[1] "Winner number:  1"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 1:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "17" "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  NA              NA         
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  NA              NA         
+[14,] "Voter 14"  NA              NA         
+[15,] "Voter 15"  NA              NA         
+[16,] "Voter 16"  NA              NA         
+[17,] "Voter 17"  NA              NA         
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  NA              NA         
+[25,] "Voter 25"  NA              NA         
+[26,] "Voter 26"  NA              NA         
+[27,] "Voter 27"  NA              NA         
+[28,] "Voter 28"  NA              NA         
+[29,] "Voter 29"  NA              NA         
+[30,] "Voter 30"  NA              NA         
+[31,] "Voter 31"  NA              NA         
+[32,] "Voter 32"  NA              NA         
+[33,] "Voter 33"  NA              NA         
+[34,] "Voter 34"  NA              NA         
+[35,] "Voter 35"  NA              NA         
+[36,] "Voter 36"  NA              NA         
+[37,] "Voter 37"  NA              NA         
+[38,] "Voter 38"  NA              NA         
+[39,] "Voter 39"  NA              NA         
+[40,] "Voter 40"  NA              NA         
+[41,] "Voter 41"  NA              NA         
+[42,] "Voter 42"  NA              NA         
+[43,] "Voter 43"  NA              NA         
+[44,] "Voter 44"  NA              NA         
+[45,] "Voter 45"  NA              NA         
+[46,] "Voter 46"  NA              NA         
+[47,] "Voter 47"  NA              NA         
+[48,] "Voter 48"  NA              NA         
+[49,] "Voter 49"  NA              NA         
+[50,] "Voter 50"  NA              NA         
+[51,] "Voter 51"  NA              NA         
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  NA              NA         
+[55,] "Voter 55"  NA              NA         
+[56,] "Voter 56"  NA              NA         
+[57,] "Voter 57"  NA              NA         
+[58,] "Voter 58"  NA              NA         
+[59,] "Voter 59"  NA              NA         
+[60,] "Voter 60"  NA              NA         
+[61,] "Voter 61"  NA              NA         
+[62,] "Voter 62"  NA              NA         
+[63,] "Voter 63"  NA              NA         
+[64,] "Voter 64"  NA              NA         
+[65,] "Voter 65"  NA              NA         
+[66,] "Voter 66"  NA              NA         
+[67,] "Voter 67"  NA              NA         
+[68,] "Voter 68"  NA              NA         
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 2"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 10 5 6 1 3 1 4 1 1 1 1
+Voter 11 5 6 1 3 1 4 1 1 1 1
+Voter 12 5 6 1 3 1 4 1 1 1 1
+Voter 13 1 6 1 1 1 1 1 1 1 1
+Voter 14 5 1 5 1 1 1 3 3 4 1
+Voter 15 5 1 5 1 1 1 3 3 4 1
+Voter 16 5 1 5 1 1 1 3 3 4 1
+Voter 17 5 1 1 1 1 1 1 1 1 1
+Voter 24 1 1 6 1 1 1 1 1 1 1
+Voter 25 1 1 6 1 1 1 1 1 1 1
+Voter 26 1 1 6 1 1 1 1 1 1 1
+Voter 27 1 1 6 1 1 1 1 1 1 1
+Voter 28 1 1 6 1 1 1 1 1 1 1
+Voter 29 1 1 6 1 1 1 1 1 1 1
+Voter 30 1 1 6 1 1 1 1 1 1 1
+Voter 31 1 1 1 6 1 1 1 1 1 4
+Voter 32 1 1 1 6 1 1 1 1 1 4
+Voter 33 1 1 1 6 1 1 1 1 1 4
+Voter 34 1 1 1 6 1 1 1 1 1 4
+Voter 35 1 1 1 6 1 1 1 1 1 4
+Voter 36 1 1 1 6 1 3 1 1 1 1
+Voter 37 1 1 5 1 6 1 1 1 1 1
+Voter 38 1 1 5 1 6 1 1 1 1 1
+Voter 39 1 1 5 1 6 1 1 1 1 1
+Voter 40 1 1 5 1 6 1 1 1 1 1
+Voter 41 1 1 5 1 6 1 1 1 1 1
+Voter 42 1 1 5 1 5 6 1 1 1 1
+Voter 43 1 1 5 1 5 6 1 1 1 1
+Voter 44 1 1 5 1 5 6 1 1 1 1
+Voter 45 1 1 5 1 5 6 1 1 1 1
+Voter 46 1 1 5 1 5 6 1 1 1 1
+Voter 47 1 1 5 1 5 6 1 1 1 1
+Voter 48 1 1 1 1 1 1 6 5 1 4
+Voter 49 1 1 1 1 1 1 6 5 1 4
+Voter 50 1 1 1 1 1 1 6 5 1 4
+Voter 51 1 1 1 1 1 1 6 1 1 1
+Voter 54 1 1 1 1 1 3 4 6 5 1
+Voter 55 1 1 1 1 1 3 4 6 5 1
+Voter 56 1 1 1 1 1 3 4 6 5 1
+Voter 57 1 1 1 1 1 3 4 6 5 1
+Voter 58 1 1 6 1 6 6 6 6 1 1
+Voter 59 1 1 6 1 6 6 6 6 1 1
+Voter 60 1 1 1 5 5 1 1 1 6 1
+Voter 61 1 1 1 5 5 1 1 1 6 1
+Voter 62 1 1 1 1 1 1 1 1 6 1
+Voter 63 1 1 6 6 1 1 1 1 6 1
+Voter 64 1 1 6 6 1 1 1 1 6 1
+Voter 65 1 1 1 6 6 1 5 5 6 1
+Voter 66 1 1 1 6 6 1 5 5 6 1
+Voter 67 1 1 1 1 1 1 1 1 1 6
+Voter 68 1 1 1 1 1 1 1 1 1 6
+Voter 69 1 1 1 1 1 1 1 1 1 1
+Voter 70 1 1 1 1 1 1 1 1 1 1
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "0"  "4"  "11" "10" "9"  "8"  "6"  "6"  "7"  "2"  
+[1] "The winner of round 2 is: C, with 11 affirmed evaluations."
+[1] "Winner number:  3"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 2:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "17" "0"  "11" "0"  "0"  "0"  "0"  "0"  "0"  "0"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  NA              NA         
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  NA              NA         
+[14,] "Voter 14"  NA              NA         
+[15,] "Voter 15"  NA              NA         
+[16,] "Voter 16"  NA              NA         
+[17,] "Voter 17"  NA              NA         
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "C"             "2"        
+[25,] "Voter 25"  "C"             "2"        
+[26,] "Voter 26"  "C"             "2"        
+[27,] "Voter 27"  "C"             "2"        
+[28,] "Voter 28"  "C"             "2"        
+[29,] "Voter 29"  "C"             "2"        
+[30,] "Voter 30"  "C"             "2"        
+[31,] "Voter 31"  NA              NA         
+[32,] "Voter 32"  NA              NA         
+[33,] "Voter 33"  NA              NA         
+[34,] "Voter 34"  NA              NA         
+[35,] "Voter 35"  NA              NA         
+[36,] "Voter 36"  NA              NA         
+[37,] "Voter 37"  NA              NA         
+[38,] "Voter 38"  NA              NA         
+[39,] "Voter 39"  NA              NA         
+[40,] "Voter 40"  NA              NA         
+[41,] "Voter 41"  NA              NA         
+[42,] "Voter 42"  NA              NA         
+[43,] "Voter 43"  NA              NA         
+[44,] "Voter 44"  NA              NA         
+[45,] "Voter 45"  NA              NA         
+[46,] "Voter 46"  NA              NA         
+[47,] "Voter 47"  NA              NA         
+[48,] "Voter 48"  NA              NA         
+[49,] "Voter 49"  NA              NA         
+[50,] "Voter 50"  NA              NA         
+[51,] "Voter 51"  NA              NA         
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  NA              NA         
+[55,] "Voter 55"  NA              NA         
+[56,] "Voter 56"  NA              NA         
+[57,] "Voter 57"  NA              NA         
+[58,] "Voter 58"  "C"             "2"        
+[59,] "Voter 59"  "C"             "2"        
+[60,] "Voter 60"  NA              NA         
+[61,] "Voter 61"  NA              NA         
+[62,] "Voter 62"  NA              NA         
+[63,] "Voter 63"  "C"             "2"        
+[64,] "Voter 64"  "C"             "2"        
+[65,] "Voter 65"  NA              NA         
+[66,] "Voter 66"  NA              NA         
+[67,] "Voter 67"  NA              NA         
+[68,] "Voter 68"  NA              NA         
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 3"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 10 5 6 1 3 1 4 1 1 1 1
+Voter 11 5 6 1 3 1 4 1 1 1 1
+Voter 12 5 6 1 3 1 4 1 1 1 1
+Voter 13 1 6 1 1 1 1 1 1 1 1
+Voter 14 5 1 5 1 1 1 3 3 4 1
+Voter 15 5 1 5 1 1 1 3 3 4 1
+Voter 16 5 1 5 1 1 1 3 3 4 1
+Voter 17 5 1 1 1 1 1 1 1 1 1
+Voter 31 1 1 1 6 1 1 1 1 1 4
+Voter 32 1 1 1 6 1 1 1 1 1 4
+Voter 33 1 1 1 6 1 1 1 1 1 4
+Voter 34 1 1 1 6 1 1 1 1 1 4
+Voter 35 1 1 1 6 1 1 1 1 1 4
+Voter 36 1 1 1 6 1 3 1 1 1 1
+Voter 37 1 1 5 1 6 1 1 1 1 1
+Voter 38 1 1 5 1 6 1 1 1 1 1
+Voter 39 1 1 5 1 6 1 1 1 1 1
+Voter 40 1 1 5 1 6 1 1 1 1 1
+Voter 41 1 1 5 1 6 1 1 1 1 1
+Voter 42 1 1 5 1 5 6 1 1 1 1
+Voter 43 1 1 5 1 5 6 1 1 1 1
+Voter 44 1 1 5 1 5 6 1 1 1 1
+Voter 45 1 1 5 1 5 6 1 1 1 1
+Voter 46 1 1 5 1 5 6 1 1 1 1
+Voter 47 1 1 5 1 5 6 1 1 1 1
+Voter 48 1 1 1 1 1 1 6 5 1 4
+Voter 49 1 1 1 1 1 1 6 5 1 4
+Voter 50 1 1 1 1 1 1 6 5 1 4
+Voter 51 1 1 1 1 1 1 6 1 1 1
+Voter 54 1 1 1 1 1 3 4 6 5 1
+Voter 55 1 1 1 1 1 3 4 6 5 1
+Voter 56 1 1 1 1 1 3 4 6 5 1
+Voter 57 1 1 1 1 1 3 4 6 5 1
+Voter 60 1 1 1 5 5 1 1 1 6 1
+Voter 61 1 1 1 5 5 1 1 1 6 1
+Voter 62 1 1 1 1 1 1 1 1 6 1
+Voter 65 1 1 1 6 6 1 5 5 6 1
+Voter 66 1 1 1 6 6 1 5 5 6 1
+Voter 67 1 1 1 1 1 1 1 1 1 6
+Voter 68 1 1 1 1 1 1 1 1 1 6
+Voter 69 1 1 1 1 1 1 1 1 1 1
+Voter 70 1 1 1 1 1 1 1 1 1 1
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "0"  "4"  "0"  "8"  "7"  "6"  "4"  "4"  "5"  "2"  
+[1] "The winner of round 3 is: D, with 8 affirmed evaluations."
+[1] "Winner number:  4"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 3:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "17" "0"  "11" "8"  "0"  "0"  "0"  "0"  "0"  "0"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  NA              NA         
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  NA              NA         
+[14,] "Voter 14"  NA              NA         
+[15,] "Voter 15"  NA              NA         
+[16,] "Voter 16"  NA              NA         
+[17,] "Voter 17"  NA              NA         
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "C"             "2"        
+[25,] "Voter 25"  "C"             "2"        
+[26,] "Voter 26"  "C"             "2"        
+[27,] "Voter 27"  "C"             "2"        
+[28,] "Voter 28"  "C"             "2"        
+[29,] "Voter 29"  "C"             "2"        
+[30,] "Voter 30"  "C"             "2"        
+[31,] "Voter 31"  "D"             "3"        
+[32,] "Voter 32"  "D"             "3"        
+[33,] "Voter 33"  "D"             "3"        
+[34,] "Voter 34"  "D"             "3"        
+[35,] "Voter 35"  "D"             "3"        
+[36,] "Voter 36"  "D"             "3"        
+[37,] "Voter 37"  NA              NA         
+[38,] "Voter 38"  NA              NA         
+[39,] "Voter 39"  NA              NA         
+[40,] "Voter 40"  NA              NA         
+[41,] "Voter 41"  NA              NA         
+[42,] "Voter 42"  NA              NA         
+[43,] "Voter 43"  NA              NA         
+[44,] "Voter 44"  NA              NA         
+[45,] "Voter 45"  NA              NA         
+[46,] "Voter 46"  NA              NA         
+[47,] "Voter 47"  NA              NA         
+[48,] "Voter 48"  NA              NA         
+[49,] "Voter 49"  NA              NA         
+[50,] "Voter 50"  NA              NA         
+[51,] "Voter 51"  NA              NA         
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  NA              NA         
+[55,] "Voter 55"  NA              NA         
+[56,] "Voter 56"  NA              NA         
+[57,] "Voter 57"  NA              NA         
+[58,] "Voter 58"  "C"             "2"        
+[59,] "Voter 59"  "C"             "2"        
+[60,] "Voter 60"  NA              NA         
+[61,] "Voter 61"  NA              NA         
+[62,] "Voter 62"  NA              NA         
+[63,] "Voter 63"  "C"             "2"        
+[64,] "Voter 64"  "C"             "2"        
+[65,] "Voter 65"  "D"             "3"        
+[66,] "Voter 66"  "D"             "3"        
+[67,] "Voter 67"  NA              NA         
+[68,] "Voter 68"  NA              NA         
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 4"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 10 5 6 1 3 1 4 1 1 1 1
+Voter 11 5 6 1 3 1 4 1 1 1 1
+Voter 12 5 6 1 3 1 4 1 1 1 1
+Voter 13 1 6 1 1 1 1 1 1 1 1
+Voter 14 5 1 5 1 1 1 3 3 4 1
+Voter 15 5 1 5 1 1 1 3 3 4 1
+Voter 16 5 1 5 1 1 1 3 3 4 1
+Voter 17 5 1 1 1 1 1 1 1 1 1
+Voter 37 1 1 5 1 6 1 1 1 1 1
+Voter 38 1 1 5 1 6 1 1 1 1 1
+Voter 39 1 1 5 1 6 1 1 1 1 1
+Voter 40 1 1 5 1 6 1 1 1 1 1
+Voter 41 1 1 5 1 6 1 1 1 1 1
+Voter 42 1 1 5 1 5 6 1 1 1 1
+Voter 43 1 1 5 1 5 6 1 1 1 1
+Voter 44 1 1 5 1 5 6 1 1 1 1
+Voter 45 1 1 5 1 5 6 1 1 1 1
+Voter 46 1 1 5 1 5 6 1 1 1 1
+Voter 47 1 1 5 1 5 6 1 1 1 1
+Voter 48 1 1 1 1 1 1 6 5 1 4
+Voter 49 1 1 1 1 1 1 6 5 1 4
+Voter 50 1 1 1 1 1 1 6 5 1 4
+Voter 51 1 1 1 1 1 1 6 1 1 1
+Voter 54 1 1 1 1 1 3 4 6 5 1
+Voter 55 1 1 1 1 1 3 4 6 5 1
+Voter 56 1 1 1 1 1 3 4 6 5 1
+Voter 57 1 1 1 1 1 3 4 6 5 1
+Voter 60 1 1 1 5 5 1 1 1 6 1
+Voter 61 1 1 1 5 5 1 1 1 6 1
+Voter 62 1 1 1 1 1 1 1 1 6 1
+Voter 67 1 1 1 1 1 1 1 1 1 6
+Voter 68 1 1 1 1 1 1 1 1 1 6
+Voter 69 1 1 1 1 1 1 1 1 1 1
+Voter 70 1 1 1 1 1 1 1 1 1 1
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "0"  "4"  "0"  "0"  "5"  "6"  "4"  "4"  "3"  "2"  
+[1] "The winner of round 4 is: F, with 6 affirmed evaluations."
+[1] "Winner number:  6"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 4:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "17" "0"  "11" "8"  "0"  "6"  "0"  "0"  "0"  "0"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  NA              NA         
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  NA              NA         
+[14,] "Voter 14"  NA              NA         
+[15,] "Voter 15"  NA              NA         
+[16,] "Voter 16"  NA              NA         
+[17,] "Voter 17"  NA              NA         
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "C"             "2"        
+[25,] "Voter 25"  "C"             "2"        
+[26,] "Voter 26"  "C"             "2"        
+[27,] "Voter 27"  "C"             "2"        
+[28,] "Voter 28"  "C"             "2"        
+[29,] "Voter 29"  "C"             "2"        
+[30,] "Voter 30"  "C"             "2"        
+[31,] "Voter 31"  "D"             "3"        
+[32,] "Voter 32"  "D"             "3"        
+[33,] "Voter 33"  "D"             "3"        
+[34,] "Voter 34"  "D"             "3"        
+[35,] "Voter 35"  "D"             "3"        
+[36,] "Voter 36"  "D"             "3"        
+[37,] "Voter 37"  NA              NA         
+[38,] "Voter 38"  NA              NA         
+[39,] "Voter 39"  NA              NA         
+[40,] "Voter 40"  NA              NA         
+[41,] "Voter 41"  NA              NA         
+[42,] "Voter 42"  "F"             "4"        
+[43,] "Voter 43"  "F"             "4"        
+[44,] "Voter 44"  "F"             "4"        
+[45,] "Voter 45"  "F"             "4"        
+[46,] "Voter 46"  "F"             "4"        
+[47,] "Voter 47"  "F"             "4"        
+[48,] "Voter 48"  NA              NA         
+[49,] "Voter 49"  NA              NA         
+[50,] "Voter 50"  NA              NA         
+[51,] "Voter 51"  NA              NA         
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  NA              NA         
+[55,] "Voter 55"  NA              NA         
+[56,] "Voter 56"  NA              NA         
+[57,] "Voter 57"  NA              NA         
+[58,] "Voter 58"  "C"             "2"        
+[59,] "Voter 59"  "C"             "2"        
+[60,] "Voter 60"  NA              NA         
+[61,] "Voter 61"  NA              NA         
+[62,] "Voter 62"  NA              NA         
+[63,] "Voter 63"  "C"             "2"        
+[64,] "Voter 64"  "C"             "2"        
+[65,] "Voter 65"  "D"             "3"        
+[66,] "Voter 66"  "D"             "3"        
+[67,] "Voter 67"  NA              NA         
+[68,] "Voter 68"  NA              NA         
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 5"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 10 5 6 1 3 1 4 1 1 1 1
+Voter 11 5 6 1 3 1 4 1 1 1 1
+Voter 12 5 6 1 3 1 4 1 1 1 1
+Voter 13 1 6 1 1 1 1 1 1 1 1
+Voter 14 5 1 5 1 1 1 3 3 4 1
+Voter 15 5 1 5 1 1 1 3 3 4 1
+Voter 16 5 1 5 1 1 1 3 3 4 1
+Voter 17 5 1 1 1 1 1 1 1 1 1
+Voter 37 1 1 5 1 6 1 1 1 1 1
+Voter 38 1 1 5 1 6 1 1 1 1 1
+Voter 39 1 1 5 1 6 1 1 1 1 1
+Voter 40 1 1 5 1 6 1 1 1 1 1
+Voter 41 1 1 5 1 6 1 1 1 1 1
+Voter 48 1 1 1 1 1 1 6 5 1 4
+Voter 49 1 1 1 1 1 1 6 5 1 4
+Voter 50 1 1 1 1 1 1 6 5 1 4
+Voter 51 1 1 1 1 1 1 6 1 1 1
+Voter 54 1 1 1 1 1 3 4 6 5 1
+Voter 55 1 1 1 1 1 3 4 6 5 1
+Voter 56 1 1 1 1 1 3 4 6 5 1
+Voter 57 1 1 1 1 1 3 4 6 5 1
+Voter 60 1 1 1 5 5 1 1 1 6 1
+Voter 61 1 1 1 5 5 1 1 1 6 1
+Voter 62 1 1 1 1 1 1 1 1 6 1
+Voter 67 1 1 1 1 1 1 1 1 1 6
+Voter 68 1 1 1 1 1 1 1 1 1 6
+Voter 69 1 1 1 1 1 1 1 1 1 1
+Voter 70 1 1 1 1 1 1 1 1 1 1
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "0"  "4"  "0"  "0"  "5"  "0"  "4"  "4"  "3"  "2"  
+[1] "The winner of round 5 is: E, with 5 affirmed evaluations."
+[1] "Winner number:  5"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 5:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "17" "0"  "11" "8"  "5"  "6"  "0"  "0"  "0"  "0"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  NA              NA         
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  NA              NA         
+[14,] "Voter 14"  NA              NA         
+[15,] "Voter 15"  NA              NA         
+[16,] "Voter 16"  NA              NA         
+[17,] "Voter 17"  NA              NA         
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "C"             "2"        
+[25,] "Voter 25"  "C"             "2"        
+[26,] "Voter 26"  "C"             "2"        
+[27,] "Voter 27"  "C"             "2"        
+[28,] "Voter 28"  "C"             "2"        
+[29,] "Voter 29"  "C"             "2"        
+[30,] "Voter 30"  "C"             "2"        
+[31,] "Voter 31"  "D"             "3"        
+[32,] "Voter 32"  "D"             "3"        
+[33,] "Voter 33"  "D"             "3"        
+[34,] "Voter 34"  "D"             "3"        
+[35,] "Voter 35"  "D"             "3"        
+[36,] "Voter 36"  "D"             "3"        
+[37,] "Voter 37"  "E"             "5"        
+[38,] "Voter 38"  "E"             "5"        
+[39,] "Voter 39"  "E"             "5"        
+[40,] "Voter 40"  "E"             "5"        
+[41,] "Voter 41"  "E"             "5"        
+[42,] "Voter 42"  "F"             "4"        
+[43,] "Voter 43"  "F"             "4"        
+[44,] "Voter 44"  "F"             "4"        
+[45,] "Voter 45"  "F"             "4"        
+[46,] "Voter 46"  "F"             "4"        
+[47,] "Voter 47"  "F"             "4"        
+[48,] "Voter 48"  NA              NA         
+[49,] "Voter 49"  NA              NA         
+[50,] "Voter 50"  NA              NA         
+[51,] "Voter 51"  NA              NA         
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  NA              NA         
+[55,] "Voter 55"  NA              NA         
+[56,] "Voter 56"  NA              NA         
+[57,] "Voter 57"  NA              NA         
+[58,] "Voter 58"  "C"             "2"        
+[59,] "Voter 59"  "C"             "2"        
+[60,] "Voter 60"  NA              NA         
+[61,] "Voter 61"  NA              NA         
+[62,] "Voter 62"  NA              NA         
+[63,] "Voter 63"  "C"             "2"        
+[64,] "Voter 64"  "C"             "2"        
+[65,] "Voter 65"  "D"             "3"        
+[66,] "Voter 66"  "D"             "3"        
+[67,] "Voter 67"  NA              NA         
+[68,] "Voter 68"  NA              NA         
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 6"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 10 5 6 1 3 1 4 1 1 1 1
+Voter 11 5 6 1 3 1 4 1 1 1 1
+Voter 12 5 6 1 3 1 4 1 1 1 1
+Voter 13 1 6 1 1 1 1 1 1 1 1
+Voter 14 5 1 5 1 1 1 3 3 4 1
+Voter 15 5 1 5 1 1 1 3 3 4 1
+Voter 16 5 1 5 1 1 1 3 3 4 1
+Voter 17 5 1 1 1 1 1 1 1 1 1
+Voter 48 1 1 1 1 1 1 6 5 1 4
+Voter 49 1 1 1 1 1 1 6 5 1 4
+Voter 50 1 1 1 1 1 1 6 5 1 4
+Voter 51 1 1 1 1 1 1 6 1 1 1
+Voter 54 1 1 1 1 1 3 4 6 5 1
+Voter 55 1 1 1 1 1 3 4 6 5 1
+Voter 56 1 1 1 1 1 3 4 6 5 1
+Voter 57 1 1 1 1 1 3 4 6 5 1
+Voter 60 1 1 1 5 5 1 1 1 6 1
+Voter 61 1 1 1 5 5 1 1 1 6 1
+Voter 62 1 1 1 1 1 1 1 1 6 1
+Voter 67 1 1 1 1 1 1 1 1 1 6
+Voter 68 1 1 1 1 1 1 1 1 1 6
+Voter 69 1 1 1 1 1 1 1 1 1 1
+Voter 70 1 1 1 1 1 1 1 1 1 1
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "0"  "4"  "0"  "0"  "0"  "0"  "4"  "4"  "3"  "2"  
+Tied winners:  B G H 
+Sum of each candidate's ordinal evaluations if counted numerically. Used first to break ties before one of the candidates with the same score is chosen randomly.
+ [1]  0 24  0  0  0  0 24 24 18 12
+[1] "The winner of round 6 is: H, with 4 affirmed evaluations."
+[1] "Winner number:  8"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 6:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "17" "0"  "11" "8"  "5"  "6"  "0"  "4"  "0"  "0"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  NA              NA         
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  NA              NA         
+[14,] "Voter 14"  NA              NA         
+[15,] "Voter 15"  NA              NA         
+[16,] "Voter 16"  NA              NA         
+[17,] "Voter 17"  NA              NA         
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "C"             "2"        
+[25,] "Voter 25"  "C"             "2"        
+[26,] "Voter 26"  "C"             "2"        
+[27,] "Voter 27"  "C"             "2"        
+[28,] "Voter 28"  "C"             "2"        
+[29,] "Voter 29"  "C"             "2"        
+[30,] "Voter 30"  "C"             "2"        
+[31,] "Voter 31"  "D"             "3"        
+[32,] "Voter 32"  "D"             "3"        
+[33,] "Voter 33"  "D"             "3"        
+[34,] "Voter 34"  "D"             "3"        
+[35,] "Voter 35"  "D"             "3"        
+[36,] "Voter 36"  "D"             "3"        
+[37,] "Voter 37"  "E"             "5"        
+[38,] "Voter 38"  "E"             "5"        
+[39,] "Voter 39"  "E"             "5"        
+[40,] "Voter 40"  "E"             "5"        
+[41,] "Voter 41"  "E"             "5"        
+[42,] "Voter 42"  "F"             "4"        
+[43,] "Voter 43"  "F"             "4"        
+[44,] "Voter 44"  "F"             "4"        
+[45,] "Voter 45"  "F"             "4"        
+[46,] "Voter 46"  "F"             "4"        
+[47,] "Voter 47"  "F"             "4"        
+[48,] "Voter 48"  NA              NA         
+[49,] "Voter 49"  NA              NA         
+[50,] "Voter 50"  NA              NA         
+[51,] "Voter 51"  NA              NA         
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  "H"             "6"        
+[55,] "Voter 55"  "H"             "6"        
+[56,] "Voter 56"  "H"             "6"        
+[57,] "Voter 57"  "H"             "6"        
+[58,] "Voter 58"  "C"             "2"        
+[59,] "Voter 59"  "C"             "2"        
+[60,] "Voter 60"  NA              NA         
+[61,] "Voter 61"  NA              NA         
+[62,] "Voter 62"  NA              NA         
+[63,] "Voter 63"  "C"             "2"        
+[64,] "Voter 64"  "C"             "2"        
+[65,] "Voter 65"  "D"             "3"        
+[66,] "Voter 66"  "D"             "3"        
+[67,] "Voter 67"  NA              NA         
+[68,] "Voter 68"  NA              NA         
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 7"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 10 5 6 1 3 1 4 1 1 1 1
+Voter 11 5 6 1 3 1 4 1 1 1 1
+Voter 12 5 6 1 3 1 4 1 1 1 1
+Voter 13 1 6 1 1 1 1 1 1 1 1
+Voter 14 5 1 5 1 1 1 3 3 4 1
+Voter 15 5 1 5 1 1 1 3 3 4 1
+Voter 16 5 1 5 1 1 1 3 3 4 1
+Voter 17 5 1 1 1 1 1 1 1 1 1
+Voter 48 1 1 1 1 1 1 6 5 1 4
+Voter 49 1 1 1 1 1 1 6 5 1 4
+Voter 50 1 1 1 1 1 1 6 5 1 4
+Voter 51 1 1 1 1 1 1 6 1 1 1
+Voter 60 1 1 1 5 5 1 1 1 6 1
+Voter 61 1 1 1 5 5 1 1 1 6 1
+Voter 62 1 1 1 1 1 1 1 1 6 1
+Voter 67 1 1 1 1 1 1 1 1 1 6
+Voter 68 1 1 1 1 1 1 1 1 1 6
+Voter 69 1 1 1 1 1 1 1 1 1 1
+Voter 70 1 1 1 1 1 1 1 1 1 1
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "0"  "4"  "0"  "0"  "0"  "0"  "4"  "0"  "3"  "2"  
+Tied winners:  B G 
+Sum of each candidate's ordinal evaluations if counted numerically. Used first to break ties before one of the candidates with the same score is chosen randomly.
+ [1]  0 24  0  0  0  0 24  0 18 12
+[1] "The winner of round 7 is: G, with 4 affirmed evaluations."
+[1] "Winner number:  7"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 7:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "17" "0"  "11" "8"  "5"  "6"  "4"  "4"  "0"  "0"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  NA              NA         
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  NA              NA         
+[14,] "Voter 14"  NA              NA         
+[15,] "Voter 15"  NA              NA         
+[16,] "Voter 16"  NA              NA         
+[17,] "Voter 17"  NA              NA         
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "C"             "2"        
+[25,] "Voter 25"  "C"             "2"        
+[26,] "Voter 26"  "C"             "2"        
+[27,] "Voter 27"  "C"             "2"        
+[28,] "Voter 28"  "C"             "2"        
+[29,] "Voter 29"  "C"             "2"        
+[30,] "Voter 30"  "C"             "2"        
+[31,] "Voter 31"  "D"             "3"        
+[32,] "Voter 32"  "D"             "3"        
+[33,] "Voter 33"  "D"             "3"        
+[34,] "Voter 34"  "D"             "3"        
+[35,] "Voter 35"  "D"             "3"        
+[36,] "Voter 36"  "D"             "3"        
+[37,] "Voter 37"  "E"             "5"        
+[38,] "Voter 38"  "E"             "5"        
+[39,] "Voter 39"  "E"             "5"        
+[40,] "Voter 40"  "E"             "5"        
+[41,] "Voter 41"  "E"             "5"        
+[42,] "Voter 42"  "F"             "4"        
+[43,] "Voter 43"  "F"             "4"        
+[44,] "Voter 44"  "F"             "4"        
+[45,] "Voter 45"  "F"             "4"        
+[46,] "Voter 46"  "F"             "4"        
+[47,] "Voter 47"  "F"             "4"        
+[48,] "Voter 48"  "G"             "7"        
+[49,] "Voter 49"  "G"             "7"        
+[50,] "Voter 50"  "G"             "7"        
+[51,] "Voter 51"  "G"             "7"        
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  "H"             "6"        
+[55,] "Voter 55"  "H"             "6"        
+[56,] "Voter 56"  "H"             "6"        
+[57,] "Voter 57"  "H"             "6"        
+[58,] "Voter 58"  "C"             "2"        
+[59,] "Voter 59"  "C"             "2"        
+[60,] "Voter 60"  NA              NA         
+[61,] "Voter 61"  NA              NA         
+[62,] "Voter 62"  NA              NA         
+[63,] "Voter 63"  "C"             "2"        
+[64,] "Voter 64"  "C"             "2"        
+[65,] "Voter 65"  "D"             "3"        
+[66,] "Voter 66"  "D"             "3"        
+[67,] "Voter 67"  NA              NA         
+[68,] "Voter 68"  NA              NA         
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 8"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 10 5 6 1 3 1 4 1 1 1 1
+Voter 11 5 6 1 3 1 4 1 1 1 1
+Voter 12 5 6 1 3 1 4 1 1 1 1
+Voter 13 1 6 1 1 1 1 1 1 1 1
+Voter 14 5 1 5 1 1 1 3 3 4 1
+Voter 15 5 1 5 1 1 1 3 3 4 1
+Voter 16 5 1 5 1 1 1 3 3 4 1
+Voter 17 5 1 1 1 1 1 1 1 1 1
+Voter 60 1 1 1 5 5 1 1 1 6 1
+Voter 61 1 1 1 5 5 1 1 1 6 1
+Voter 62 1 1 1 1 1 1 1 1 6 1
+Voter 67 1 1 1 1 1 1 1 1 1 6
+Voter 68 1 1 1 1 1 1 1 1 1 6
+Voter 69 1 1 1 1 1 1 1 1 1 1
+Voter 70 1 1 1 1 1 1 1 1 1 1
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "0"  "4"  "0"  "0"  "0"  "0"  "0"  "0"  "3"  "2"  
+[1] "The winner of round 8 is: B, with 4 affirmed evaluations."
+[1] "Winner number:  2"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 8:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "17" "4"  "11" "8"  "5"  "6"  "4"  "4"  "0"  "0"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "B"             "8"        
+[11,] "Voter 11"  "B"             "8"        
+[12,] "Voter 12"  "B"             "8"        
+[13,] "Voter 13"  "B"             "8"        
+[14,] "Voter 14"  NA              NA         
+[15,] "Voter 15"  NA              NA         
+[16,] "Voter 16"  NA              NA         
+[17,] "Voter 17"  NA              NA         
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "C"             "2"        
+[25,] "Voter 25"  "C"             "2"        
+[26,] "Voter 26"  "C"             "2"        
+[27,] "Voter 27"  "C"             "2"        
+[28,] "Voter 28"  "C"             "2"        
+[29,] "Voter 29"  "C"             "2"        
+[30,] "Voter 30"  "C"             "2"        
+[31,] "Voter 31"  "D"             "3"        
+[32,] "Voter 32"  "D"             "3"        
+[33,] "Voter 33"  "D"             "3"        
+[34,] "Voter 34"  "D"             "3"        
+[35,] "Voter 35"  "D"             "3"        
+[36,] "Voter 36"  "D"             "3"        
+[37,] "Voter 37"  "E"             "5"        
+[38,] "Voter 38"  "E"             "5"        
+[39,] "Voter 39"  "E"             "5"        
+[40,] "Voter 40"  "E"             "5"        
+[41,] "Voter 41"  "E"             "5"        
+[42,] "Voter 42"  "F"             "4"        
+[43,] "Voter 43"  "F"             "4"        
+[44,] "Voter 44"  "F"             "4"        
+[45,] "Voter 45"  "F"             "4"        
+[46,] "Voter 46"  "F"             "4"        
+[47,] "Voter 47"  "F"             "4"        
+[48,] "Voter 48"  "G"             "7"        
+[49,] "Voter 49"  "G"             "7"        
+[50,] "Voter 50"  "G"             "7"        
+[51,] "Voter 51"  "G"             "7"        
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  "H"             "6"        
+[55,] "Voter 55"  "H"             "6"        
+[56,] "Voter 56"  "H"             "6"        
+[57,] "Voter 57"  "H"             "6"        
+[58,] "Voter 58"  "C"             "2"        
+[59,] "Voter 59"  "C"             "2"        
+[60,] "Voter 60"  NA              NA         
+[61,] "Voter 61"  NA              NA         
+[62,] "Voter 62"  NA              NA         
+[63,] "Voter 63"  "C"             "2"        
+[64,] "Voter 64"  "C"             "2"        
+[65,] "Voter 65"  "D"             "3"        
+[66,] "Voter 66"  "D"             "3"        
+[67,] "Voter 67"  NA              NA         
+[68,] "Voter 68"  NA              NA         
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 9"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 14 5 1 5 1 1 1 3 3 4 1
+Voter 15 5 1 5 1 1 1 3 3 4 1
+Voter 16 5 1 5 1 1 1 3 3 4 1
+Voter 17 5 1 1 1 1 1 1 1 1 1
+Voter 60 1 1 1 5 5 1 1 1 6 1
+Voter 61 1 1 1 5 5 1 1 1 6 1
+Voter 62 1 1 1 1 1 1 1 1 6 1
+Voter 67 1 1 1 1 1 1 1 1 1 6
+Voter 68 1 1 1 1 1 1 1 1 1 6
+Voter 69 1 1 1 1 1 1 1 1 1 1
+Voter 70 1 1 1 1 1 1 1 1 1 1
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "3"  "2"  
+[1] "The winner of round 9 is: I, with 3 affirmed evaluations."
+[1] "Winner number:  9"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 9:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "17" "4"  "11" "8"  "5"  "6"  "4"  "4"  "3"  "0"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "B"             "8"        
+[11,] "Voter 11"  "B"             "8"        
+[12,] "Voter 12"  "B"             "8"        
+[13,] "Voter 13"  "B"             "8"        
+[14,] "Voter 14"  NA              NA         
+[15,] "Voter 15"  NA              NA         
+[16,] "Voter 16"  NA              NA         
+[17,] "Voter 17"  NA              NA         
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "C"             "2"        
+[25,] "Voter 25"  "C"             "2"        
+[26,] "Voter 26"  "C"             "2"        
+[27,] "Voter 27"  "C"             "2"        
+[28,] "Voter 28"  "C"             "2"        
+[29,] "Voter 29"  "C"             "2"        
+[30,] "Voter 30"  "C"             "2"        
+[31,] "Voter 31"  "D"             "3"        
+[32,] "Voter 32"  "D"             "3"        
+[33,] "Voter 33"  "D"             "3"        
+[34,] "Voter 34"  "D"             "3"        
+[35,] "Voter 35"  "D"             "3"        
+[36,] "Voter 36"  "D"             "3"        
+[37,] "Voter 37"  "E"             "5"        
+[38,] "Voter 38"  "E"             "5"        
+[39,] "Voter 39"  "E"             "5"        
+[40,] "Voter 40"  "E"             "5"        
+[41,] "Voter 41"  "E"             "5"        
+[42,] "Voter 42"  "F"             "4"        
+[43,] "Voter 43"  "F"             "4"        
+[44,] "Voter 44"  "F"             "4"        
+[45,] "Voter 45"  "F"             "4"        
+[46,] "Voter 46"  "F"             "4"        
+[47,] "Voter 47"  "F"             "4"        
+[48,] "Voter 48"  "G"             "7"        
+[49,] "Voter 49"  "G"             "7"        
+[50,] "Voter 50"  "G"             "7"        
+[51,] "Voter 51"  "G"             "7"        
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  "H"             "6"        
+[55,] "Voter 55"  "H"             "6"        
+[56,] "Voter 56"  "H"             "6"        
+[57,] "Voter 57"  "H"             "6"        
+[58,] "Voter 58"  "C"             "2"        
+[59,] "Voter 59"  "C"             "2"        
+[60,] "Voter 60"  "I"             "9"        
+[61,] "Voter 61"  "I"             "9"        
+[62,] "Voter 62"  "I"             "9"        
+[63,] "Voter 63"  "C"             "2"        
+[64,] "Voter 64"  "C"             "2"        
+[65,] "Voter 65"  "D"             "3"        
+[66,] "Voter 66"  "D"             "3"        
+[67,] "Voter 67"  NA              NA         
+[68,] "Voter 68"  NA              NA         
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 10"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 14 5 1 5 1 1 1 3 3 4 1
+Voter 15 5 1 5 1 1 1 3 3 4 1
+Voter 16 5 1 5 1 1 1 3 3 4 1
+Voter 17 5 1 1 1 1 1 1 1 1 1
+Voter 67 1 1 1 1 1 1 1 1 1 6
+Voter 68 1 1 1 1 1 1 1 1 1 6
+Voter 69 1 1 1 1 1 1 1 1 1 1
+Voter 70 1 1 1 1 1 1 1 1 1 1
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "2"  
+[1] "The winner of round 10 is: J, with 2 affirmed evaluations."
+[1] "Winner number:  10"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 10:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "17" "4"  "11" "8"  "5"  "6"  "4"  "4"  "3"  "2"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "B"             "8"        
+[11,] "Voter 11"  "B"             "8"        
+[12,] "Voter 12"  "B"             "8"        
+[13,] "Voter 13"  "B"             "8"        
+[14,] "Voter 14"  NA              NA         
+[15,] "Voter 15"  NA              NA         
+[16,] "Voter 16"  NA              NA         
+[17,] "Voter 17"  NA              NA         
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "C"             "2"        
+[25,] "Voter 25"  "C"             "2"        
+[26,] "Voter 26"  "C"             "2"        
+[27,] "Voter 27"  "C"             "2"        
+[28,] "Voter 28"  "C"             "2"        
+[29,] "Voter 29"  "C"             "2"        
+[30,] "Voter 30"  "C"             "2"        
+[31,] "Voter 31"  "D"             "3"        
+[32,] "Voter 32"  "D"             "3"        
+[33,] "Voter 33"  "D"             "3"        
+[34,] "Voter 34"  "D"             "3"        
+[35,] "Voter 35"  "D"             "3"        
+[36,] "Voter 36"  "D"             "3"        
+[37,] "Voter 37"  "E"             "5"        
+[38,] "Voter 38"  "E"             "5"        
+[39,] "Voter 39"  "E"             "5"        
+[40,] "Voter 40"  "E"             "5"        
+[41,] "Voter 41"  "E"             "5"        
+[42,] "Voter 42"  "F"             "4"        
+[43,] "Voter 43"  "F"             "4"        
+[44,] "Voter 44"  "F"             "4"        
+[45,] "Voter 45"  "F"             "4"        
+[46,] "Voter 46"  "F"             "4"        
+[47,] "Voter 47"  "F"             "4"        
+[48,] "Voter 48"  "G"             "7"        
+[49,] "Voter 49"  "G"             "7"        
+[50,] "Voter 50"  "G"             "7"        
+[51,] "Voter 51"  "G"             "7"        
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  "H"             "6"        
+[55,] "Voter 55"  "H"             "6"        
+[56,] "Voter 56"  "H"             "6"        
+[57,] "Voter 57"  "H"             "6"        
+[58,] "Voter 58"  "C"             "2"        
+[59,] "Voter 59"  "C"             "2"        
+[60,] "Voter 60"  "I"             "9"        
+[61,] "Voter 61"  "I"             "9"        
+[62,] "Voter 62"  "I"             "9"        
+[63,] "Voter 63"  "C"             "2"        
+[64,] "Voter 64"  "C"             "2"        
+[65,] "Voter 65"  "D"             "3"        
+[66,] "Voter 66"  "D"             "3"        
+[67,] "Voter 67"  "J"             "10"       
+[68,] "Voter 68"  "J"             "10"       
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 11"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 14 5 1 5 1 1 1 3 3 4 1
+Voter 15 5 1 5 1 1 1 3 3 4 1
+Voter 16 5 1 5 1 1 1 3 3 4 1
+Voter 17 5 1 1 1 1 1 1 1 1 1
+Voter 69 1 1 1 1 1 1 1 1 1 1
+Voter 70 1 1 1 1 1 1 1 1 1 1
+[1] "Selector: 5 (Very good)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "4"  "0"  "3"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  
+[1] "The winner of round 11 is: A, with 4 affirmed evaluations."
+[1] "Winner number:  1"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 11:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "21" "4"  "11" "8"  "5"  "6"  "4"  "4"  "3"  "2"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "B"             "8"        
+[11,] "Voter 11"  "B"             "8"        
+[12,] "Voter 12"  "B"             "8"        
+[13,] "Voter 13"  "B"             "8"        
+[14,] "Voter 14"  "A"             "11"       
+[15,] "Voter 15"  "A"             "11"       
+[16,] "Voter 16"  "A"             "11"       
+[17,] "Voter 17"  "A"             "11"       
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "C"             "2"        
+[25,] "Voter 25"  "C"             "2"        
+[26,] "Voter 26"  "C"             "2"        
+[27,] "Voter 27"  "C"             "2"        
+[28,] "Voter 28"  "C"             "2"        
+[29,] "Voter 29"  "C"             "2"        
+[30,] "Voter 30"  "C"             "2"        
+[31,] "Voter 31"  "D"             "3"        
+[32,] "Voter 32"  "D"             "3"        
+[33,] "Voter 33"  "D"             "3"        
+[34,] "Voter 34"  "D"             "3"        
+[35,] "Voter 35"  "D"             "3"        
+[36,] "Voter 36"  "D"             "3"        
+[37,] "Voter 37"  "E"             "5"        
+[38,] "Voter 38"  "E"             "5"        
+[39,] "Voter 39"  "E"             "5"        
+[40,] "Voter 40"  "E"             "5"        
+[41,] "Voter 41"  "E"             "5"        
+[42,] "Voter 42"  "F"             "4"        
+[43,] "Voter 43"  "F"             "4"        
+[44,] "Voter 44"  "F"             "4"        
+[45,] "Voter 45"  "F"             "4"        
+[46,] "Voter 46"  "F"             "4"        
+[47,] "Voter 47"  "F"             "4"        
+[48,] "Voter 48"  "G"             "7"        
+[49,] "Voter 49"  "G"             "7"        
+[50,] "Voter 50"  "G"             "7"        
+[51,] "Voter 51"  "G"             "7"        
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  "H"             "6"        
+[55,] "Voter 55"  "H"             "6"        
+[56,] "Voter 56"  "H"             "6"        
+[57,] "Voter 57"  "H"             "6"        
+[58,] "Voter 58"  "C"             "2"        
+[59,] "Voter 59"  "C"             "2"        
+[60,] "Voter 60"  "I"             "9"        
+[61,] "Voter 61"  "I"             "9"        
+[62,] "Voter 62"  "I"             "9"        
+[63,] "Voter 63"  "C"             "2"        
+[64,] "Voter 64"  "C"             "2"        
+[65,] "Voter 65"  "D"             "3"        
+[66,] "Voter 66"  "D"             "3"        
+[67,] "Voter 67"  "J"             "10"       
+[68,] "Voter 68"  "J"             "10"       
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "A  has the following supporters: "
+ [1] "Voter 1"  "Voter 2"  "Voter 3"  "Voter 4"  "Voter 5"  "Voter 6"  "Voter 7" 
+ [8] "Voter 8"  "Voter 9"  "Voter 14" "Voter 15" "Voter 16" "Voter 17" "Voter 18"
+[15] "Voter 19" "Voter 20" "Voter 21" "Voter 22" "Voter 23" "Voter 52" "Voter 53"
+[1] "B  has the following supporters: "
+[1] "Voter 10" "Voter 11" "Voter 12" "Voter 13"
+[1] "C  has the following supporters: "
+ [1] "Voter 24" "Voter 25" "Voter 26" "Voter 27" "Voter 28" "Voter 29" "Voter 30"
+ [8] "Voter 58" "Voter 59" "Voter 63" "Voter 64"
+[1] "D  has the following supporters: "
+[1] "Voter 31" "Voter 32" "Voter 33" "Voter 34" "Voter 35" "Voter 36" "Voter 65"
+[8] "Voter 66"
+[1] "E  has the following supporters: "
+[1] "Voter 37" "Voter 38" "Voter 39" "Voter 40" "Voter 41"
+[1] "F  has the following supporters: "
+[1] "Voter 42" "Voter 43" "Voter 44" "Voter 45" "Voter 46" "Voter 47"
+[1] "G  has the following supporters: "
+[1] "Voter 48" "Voter 49" "Voter 50" "Voter 51"
+[1] "H  has the following supporters: "
+[1] "Voter 54" "Voter 55" "Voter 56" "Voter 57"
+[1] "I  has the following supporters: "
+[1] "Voter 60" "Voter 61" "Voter 62"
+[1] "J  has the following supporters: "
+[1] "Voter 67" "Voter 68"
+[1] "End Stage 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+[1] "Vote apportionment after Stage 1: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "B"             "8"        
+[11,] "Voter 11"  "B"             "8"        
+[12,] "Voter 12"  "B"             "8"        
+[13,] "Voter 13"  "B"             "8"        
+[14,] "Voter 14"  "A"             "11"       
+[15,] "Voter 15"  "A"             "11"       
+[16,] "Voter 16"  "A"             "11"       
+[17,] "Voter 17"  "A"             "11"       
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "C"             "2"        
+[25,] "Voter 25"  "C"             "2"        
+[26,] "Voter 26"  "C"             "2"        
+[27,] "Voter 27"  "C"             "2"        
+[28,] "Voter 28"  "C"             "2"        
+[29,] "Voter 29"  "C"             "2"        
+[30,] "Voter 30"  "C"             "2"        
+[31,] "Voter 31"  "D"             "3"        
+[32,] "Voter 32"  "D"             "3"        
+[33,] "Voter 33"  "D"             "3"        
+[34,] "Voter 34"  "D"             "3"        
+[35,] "Voter 35"  "D"             "3"        
+[36,] "Voter 36"  "D"             "3"        
+[37,] "Voter 37"  "E"             "5"        
+[38,] "Voter 38"  "E"             "5"        
+[39,] "Voter 39"  "E"             "5"        
+[40,] "Voter 40"  "E"             "5"        
+[41,] "Voter 41"  "E"             "5"        
+[42,] "Voter 42"  "F"             "4"        
+[43,] "Voter 43"  "F"             "4"        
+[44,] "Voter 44"  "F"             "4"        
+[45,] "Voter 45"  "F"             "4"        
+[46,] "Voter 46"  "F"             "4"        
+[47,] "Voter 47"  "F"             "4"        
+[48,] "Voter 48"  "G"             "7"        
+[49,] "Voter 49"  "G"             "7"        
+[50,] "Voter 50"  "G"             "7"        
+[51,] "Voter 51"  "G"             "7"        
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  "H"             "6"        
+[55,] "Voter 55"  "H"             "6"        
+[56,] "Voter 56"  "H"             "6"        
+[57,] "Voter 57"  "H"             "6"        
+[58,] "Voter 58"  "C"             "2"        
+[59,] "Voter 59"  "C"             "2"        
+[60,] "Voter 60"  "I"             "9"        
+[61,] "Voter 61"  "I"             "9"        
+[62,] "Voter 62"  "I"             "9"        
+[63,] "Voter 63"  "C"             "2"        
+[64,] "Voter 64"  "C"             "2"        
+[65,] "Voter 65"  "D"             "3"        
+[66,] "Voter 66"  "D"             "3"        
+[67,] "Voter 67"  "J"             "10"       
+[68,] "Voter 68"  "J"             "10"       
+[69,] "Voter 69"  NA              NA         
+[70,] "Voter 70"  NA              NA         
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+               "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "21" "4"  "11" "8"  "5"  "6"  "4"  "4"  "3"  "2"  
+[1] "Begin Stage 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+[1] "Limit of 14 votes per candidate based on 20% of voters (70)"
+During Stage 2, if some of the extra votes initially held by an overly popular candidate cannot be automatically transferred, the remaining votes that must be transferred become proxy votes that must be transferred publicly during the last step in Stage 4 to any of the other winners judged by the relevant overly popular winner to be most fit for office.
+[1] "**********************"
+Stage 2 transfer loop  1 
+[1] "**********************"
+Candidates currently holding more than  14 votes:  A 
+Candidate with most votes:  A ( 21 )
+[1] "Transfer 7 votes from candidate A"
+[1] "Select from the following voters' ballots:"
+ [1]  1  2  3  4  5  6  7  8  9 14 15 16 17 18 19 20 21 22 23 52 53
+[1] "Next highest graded candidate by voter:"
+[1] "voter 14 candidate C"
+[1] "voter 15 candidate C"
+[1] "voter 16 candidate C"
+[1] "voter 18 candidate B"
+[1] "voter 19 candidate B"
+[1] "voter 20 candidate B"
+[1] "voter 21 candidate B"
+[1] "voter 22 candidate B"
+[1] "voter 23 candidate B"
+[1] "voter 52 candidate B"
+   candidate ties:  B G H 
+[1] "voter 53 candidate H"
+   candidate ties:  B G H 
+Candidates and their affirmed evaluations that may receive Stage 2 transfers: 
+                  [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council           "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidates.stage2 "0"  "7"  "3"  "0"  "0"  "0"  "0"  "1"  "0"  "0"  
+Candidate B automatically selected by lot to receive up to 7 votes from A 
+Voters' ballots selected automatically by lot to transfer:  18 19 20 21 22 23 52 
+Affirmed evaluations by candidate for loop 1 
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+               "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage2 "14" "11" "11" "8"  "5"  "6"  "4"  "4"  "3"  "2"  
+[1] "End Stage 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+[1] "Vote apportionment after Stage 2: "
+      voter.names voter.candidate voter.round voter.transfer
+ [1,] "Voter 1"   "A"             "1"         NA            
+ [2,] "Voter 2"   "A"             "1"         NA            
+ [3,] "Voter 3"   "A"             "1"         NA            
+ [4,] "Voter 4"   "A"             "1"         NA            
+ [5,] "Voter 5"   "A"             "1"         NA            
+ [6,] "Voter 6"   "A"             "1"         NA            
+ [7,] "Voter 7"   "A"             "1"         NA            
+ [8,] "Voter 8"   "A"             "1"         NA            
+ [9,] "Voter 9"   "A"             "1"         NA            
+[10,] "Voter 10"  "B"             "8"         NA            
+[11,] "Voter 11"  "B"             "8"         NA            
+[12,] "Voter 12"  "B"             "8"         NA            
+[13,] "Voter 13"  "B"             "8"         NA            
+[14,] "Voter 14"  "A"             "11"        NA            
+[15,] "Voter 15"  "A"             "11"        NA            
+[16,] "Voter 16"  "A"             "11"        NA            
+[17,] "Voter 17"  "A"             "11"        NA            
+[18,] "Voter 18"  "B"             "1"         "From A to B" 
+[19,] "Voter 19"  "B"             "1"         "From A to B" 
+[20,] "Voter 20"  "B"             "1"         "From A to B" 
+[21,] "Voter 21"  "B"             "1"         "From A to B" 
+[22,] "Voter 22"  "B"             "1"         "From A to B" 
+[23,] "Voter 23"  "B"             "1"         "From A to B" 
+[24,] "Voter 24"  "C"             "2"         NA            
+[25,] "Voter 25"  "C"             "2"         NA            
+[26,] "Voter 26"  "C"             "2"         NA            
+[27,] "Voter 27"  "C"             "2"         NA            
+[28,] "Voter 28"  "C"             "2"         NA            
+[29,] "Voter 29"  "C"             "2"         NA            
+[30,] "Voter 30"  "C"             "2"         NA            
+[31,] "Voter 31"  "D"             "3"         NA            
+[32,] "Voter 32"  "D"             "3"         NA            
+[33,] "Voter 33"  "D"             "3"         NA            
+[34,] "Voter 34"  "D"             "3"         NA            
+[35,] "Voter 35"  "D"             "3"         NA            
+[36,] "Voter 36"  "D"             "3"         NA            
+[37,] "Voter 37"  "E"             "5"         NA            
+[38,] "Voter 38"  "E"             "5"         NA            
+[39,] "Voter 39"  "E"             "5"         NA            
+[40,] "Voter 40"  "E"             "5"         NA            
+[41,] "Voter 41"  "E"             "5"         NA            
+[42,] "Voter 42"  "F"             "4"         NA            
+[43,] "Voter 43"  "F"             "4"         NA            
+[44,] "Voter 44"  "F"             "4"         NA            
+[45,] "Voter 45"  "F"             "4"         NA            
+[46,] "Voter 46"  "F"             "4"         NA            
+[47,] "Voter 47"  "F"             "4"         NA            
+[48,] "Voter 48"  "G"             "7"         NA            
+[49,] "Voter 49"  "G"             "7"         NA            
+[50,] "Voter 50"  "G"             "7"         NA            
+[51,] "Voter 51"  "G"             "7"         NA            
+[52,] "Voter 52"  "B"             "1"         "From A to B" 
+[53,] "Voter 53"  "A"             "1"         NA            
+[54,] "Voter 54"  "H"             "6"         NA            
+[55,] "Voter 55"  "H"             "6"         NA            
+[56,] "Voter 56"  "H"             "6"         NA            
+[57,] "Voter 57"  "H"             "6"         NA            
+[58,] "Voter 58"  "C"             "2"         NA            
+[59,] "Voter 59"  "C"             "2"         NA            
+[60,] "Voter 60"  "I"             "9"         NA            
+[61,] "Voter 61"  "I"             "9"         NA            
+[62,] "Voter 62"  "I"             "9"         NA            
+[63,] "Voter 63"  "C"             "2"         NA            
+[64,] "Voter 64"  "C"             "2"         NA            
+[65,] "Voter 65"  "D"             "3"         NA            
+[66,] "Voter 66"  "D"             "3"         NA            
+[67,] "Voter 67"  "J"             "10"        NA            
+[68,] "Voter 68"  "J"             "10"        NA            
+[69,] "Voter 69"  NA              NA          NA            
+[70,] "Voter 70"  NA              NA          NA            
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+               "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage2 "14" "11" "11" "8"  "5"  "6"  "4"  "4"  "3"  "2"  
+[1] "Begin Stage 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+Step 1: Determine the elected candidates.
+Step 2: Transfer votes from unelected candidates to those selected as winning candidates as follows:
+Starting with the unelected candidate currently holding the largest number of affirmed evaluations, transfer all their votes that can be transferred automatically by the algorithm to any of the winners. If necessary, resolve any ties by lot.
+
+Stage 3, Step 1: Select the 7 candidates to be elected.
+[1] "Candidates' affirmed evaluations in descending order and corresponding candidate"
+                  [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+                  "A"  "B"  "C"  "D"  "F"  "E"  "G"  "H"  "I"  "J"  
+candidates.sorted "14" "11" "11" "8"  "6"  "5"  "4"  "4"  "3"  "2"  
+From tie of lowest candidates, the algorithm randomly selected candidate H 
+[1] "Winning candidates and weights"
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7]
+[1,] "A"  "B"  "C"  "D"  "F"  "E"  "H" 
+[2,] "14" "11" "11" "8"  "6"  "5"  "4" 
+
+Stage 3, Step 2: Transfer votes from unelected candidates to elected candidates
+[1] "**********************"
+Stage 3, Step 2 transfer loop  1 
+[1] "**********************"
+[1] "Transfer 4 votes (highest affirmed evaluations) from unselected candidate G"
+Voters' ballots to select from: 48 49 50 51 
+[1] "Next highest graded candidate by voter:"
+[1] "voter 48 candidate H"
+[1] "voter 49 candidate H"
+[1] "voter 50 candidate H"
+Candidates eligible to receive Stage 3 transfers:
+                  [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council           "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidates.stage3 "0"  "0"  "0"  "0"  "0"  "0"  "0"  "3"  "0"  "0"  
+Transfer  3  votes from candidate  G to  H 
+Voters' ballots to transfer:  48 49 50 
+[1] "Remaining weights held by unelected candidates:"
+                        [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council                 "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage3.transfer "0"  "0"  "0"  "0"  "0"  "0"  "1"  "0"  "3"  "2"  
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage3 "14" "11" "11" "8"  "5"  "6"  "1"  "7"  "3"  "2"  
+* * * No more automatic transfer of votes available. Therefore, 1  proxy vote(s) required for transfer from candidate  G in Stage 4
+Voters' ballots available to transfer: 51 
+Transfer  1  proxy vote(s) from candidate  G  from these voters' ballots: 14 
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage3 "14" "11" "11" "8"  "5"  "6"  "0"  "7"  "3"  "2"  
+[1] "Remaining weights held by unelected candidates:"
+                        [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council                 "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage3.transfer "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "3"  "2"  
+[1] "**********************"
+Stage 3, Step 2 transfer loop  2 
+[1] "**********************"
+[1] "Transfer 3 votes (highest affirmed evaluations) from unselected candidate I"
+Voters' ballots to select from: 60 61 62 
+[1] "Next highest graded candidate by voter:"
+[1] "voter 60 candidate D"
+   candidate ties:  D E 
+[1] "voter 61 candidate D"
+   candidate ties:  D E 
+Candidates eligible to receive Stage 3 transfers:
+                  [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council           "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidates.stage3 "0"  "0"  "0"  "2"  "0"  "0"  "0"  "0"  "0"  "0"  
+Transfer  2  votes from candidate  I to  D 
+Voters' ballots to transfer:  60 61 
+[1] "Remaining weights held by unelected candidates:"
+                        [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council                 "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage3.transfer "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "1"  "2"  
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage3 "14" "11" "11" "10" "5"  "6"  "0"  "7"  "1"  "2"  
+* * * No more automatic transfer of votes available. Therefore, 1  proxy vote(s) required for transfer from candidate  I in Stage 4
+Voters' ballots available to transfer: 62 
+Transfer  1  proxy vote(s) from candidate  I  from these voters' ballots: 22 
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage3 "14" "11" "11" "10" "5"  "6"  "0"  "7"  "0"  "2"  
+[1] "Remaining weights held by unelected candidates:"
+                        [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council                 "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage3.transfer "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "2"  
+[1] "**********************"
+Stage 3, Step 2 transfer loop  3 
+[1] "**********************"
+[1] "Transfer 2 votes (highest affirmed evaluations) from unselected candidate J"
+Voters' ballots to select from: 67 68 
+[1] "Next highest graded candidate by voter:"
+Candidates eligible to receive Stage 3 transfers:
+                  [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council           "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidates.stage3 "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  
+* * * No more automatic transfer of votes available. Therefore, 2  proxy vote(s) required for transfer from candidate  J in Stage 4
+Voters' ballots available to transfer: 67 68 
+Transfer  2  proxy vote(s) from candidate  J  from these voters' ballots: 67 68 
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage3 "14" "11" "11" "10" "5"  "6"  "0"  "7"  "0"  "0"  
+[1] "Remaining weights held by unelected candidates:"
+                        [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council                 "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage3.transfer "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  
+[1] "End Stage 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+[1] "Vote apportionment after Stage 3: "
+      voter.names voter.candidate voter.round voter.transfer             
+ [1,] "Voter 1"   "A"             "1"         NA                         
+ [2,] "Voter 2"   "A"             "1"         NA                         
+ [3,] "Voter 3"   "A"             "1"         NA                         
+ [4,] "Voter 4"   "A"             "1"         NA                         
+ [5,] "Voter 5"   "A"             "1"         NA                         
+ [6,] "Voter 6"   "A"             "1"         NA                         
+ [7,] "Voter 7"   "A"             "1"         NA                         
+ [8,] "Voter 8"   "A"             "1"         NA                         
+ [9,] "Voter 9"   "A"             "1"         NA                         
+[10,] "Voter 10"  "B"             "8"         NA                         
+[11,] "Voter 11"  "B"             "8"         NA                         
+[12,] "Voter 12"  "B"             "8"         NA                         
+[13,] "Voter 13"  "B"             "8"         NA                         
+[14,] "Voter 14"  "A"             "11"        "Proxy vote Stage 3 from G"
+[15,] "Voter 15"  "A"             "11"        NA                         
+[16,] "Voter 16"  "A"             "11"        NA                         
+[17,] "Voter 17"  "A"             "11"        NA                         
+[18,] "Voter 18"  "B"             "1"         "From A to B"              
+[19,] "Voter 19"  "B"             "1"         "From A to B"              
+[20,] "Voter 20"  "B"             "1"         "From A to B"              
+[21,] "Voter 21"  "B"             "1"         "From A to B"              
+[22,] "Voter 22"  "B"             "1"         "Proxy vote Stage 3 from I"
+[23,] "Voter 23"  "B"             "1"         "From A to B"              
+[24,] "Voter 24"  "C"             "2"         NA                         
+[25,] "Voter 25"  "C"             "2"         NA                         
+[26,] "Voter 26"  "C"             "2"         NA                         
+[27,] "Voter 27"  "C"             "2"         NA                         
+[28,] "Voter 28"  "C"             "2"         NA                         
+[29,] "Voter 29"  "C"             "2"         NA                         
+[30,] "Voter 30"  "C"             "2"         NA                         
+[31,] "Voter 31"  "D"             "3"         NA                         
+[32,] "Voter 32"  "D"             "3"         NA                         
+[33,] "Voter 33"  "D"             "3"         NA                         
+[34,] "Voter 34"  "D"             "3"         NA                         
+[35,] "Voter 35"  "D"             "3"         NA                         
+[36,] "Voter 36"  "D"             "3"         NA                         
+[37,] "Voter 37"  "E"             "5"         NA                         
+[38,] "Voter 38"  "E"             "5"         NA                         
+[39,] "Voter 39"  "E"             "5"         NA                         
+[40,] "Voter 40"  "E"             "5"         NA                         
+[41,] "Voter 41"  "E"             "5"         NA                         
+[42,] "Voter 42"  "F"             "4"         NA                         
+[43,] "Voter 43"  "F"             "4"         NA                         
+[44,] "Voter 44"  "F"             "4"         NA                         
+[45,] "Voter 45"  "F"             "4"         NA                         
+[46,] "Voter 46"  "F"             "4"         NA                         
+[47,] "Voter 47"  "F"             "4"         NA                         
+[48,] "Voter 48"  "H"             "7"         "From G to H"              
+[49,] "Voter 49"  "H"             "7"         "From G to H"              
+[50,] "Voter 50"  "H"             "7"         "From G to H"              
+[51,] "Voter 51"  "G"             "7"         NA                         
+[52,] "Voter 52"  "B"             "1"         "From A to B"              
+[53,] "Voter 53"  "A"             "1"         NA                         
+[54,] "Voter 54"  "H"             "6"         NA                         
+[55,] "Voter 55"  "H"             "6"         NA                         
+[56,] "Voter 56"  "H"             "6"         NA                         
+[57,] "Voter 57"  "H"             "6"         NA                         
+[58,] "Voter 58"  "C"             "2"         NA                         
+[59,] "Voter 59"  "C"             "2"         NA                         
+[60,] "Voter 60"  "D"             "9"         "From I to D"              
+[61,] "Voter 61"  "D"             "9"         "From I to D"              
+[62,] "Voter 62"  "I"             "9"         NA                         
+[63,] "Voter 63"  "C"             "2"         NA                         
+[64,] "Voter 64"  "C"             "2"         NA                         
+[65,] "Voter 65"  "D"             "3"         NA                         
+[66,] "Voter 66"  "D"             "3"         NA                         
+[67,] "Voter 67"  "J"             "10"        "Proxy vote Stage 3 from J"
+[68,] "Voter 68"  "J"             "10"        "Proxy vote Stage 3 from J"
+[69,] "Voter 69"  NA              NA          NA                         
+[70,] "Voter 70"  NA              NA          NA                         
+[1] "Affirmed evaluations for winning candidates"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+               "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage3 "14" "11" "11" "10" "5"  "6"  "0"  "7"  "0"  "0"  
+
+[1] "Begin Stage 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+Finalize the weighted votes of each winner as follows:
+Starting with the unelected candidate with the largest number of proxy votes to transfer, all the proxy votes held by each unelected candidate must be publicly transferred to any of the winners. Resolve any ties by lot.
+Finally, starting with the winner with most proxy votes to transfer, publicly transfer these votes to any of the other winners. Continue with the remaining elected candidate with the most proxy votes to transfer until all proxy votes are transferred.
+Voter ballots with proxy votes to transfer:
+     voter.names.stage4 voter.transfer.stage4      
+[1,] "Voter 14"         "Proxy vote Stage 3 from G"
+[2,] "Voter 22"         "Proxy vote Stage 3 from I"
+[3,] "Voter 67"         "Proxy vote Stage 3 from J"
+[4,] "Voter 68"         "Proxy vote Stage 3 from J"
+[1] "End Stage 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+
+[1] "******** End of EPR output **********"
