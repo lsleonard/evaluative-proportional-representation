@@ -5,10 +5,19 @@
 rm(list = ls())
 set.seed(1)
 
-# NOTE: These paramaters must be set to define the operation of the algorithm
-cat("Parameters defined for this run of the algorithm\n")
 external.data.name <-
   "epr-voter-data-v2.csv" # name of input ballot data
+sink(paste("EPRv2-", external.data.name, ".txt", sep="")) # send output to file
+
+current.time <- format(Sys.time(), "%a %b %d %X %Y")
+print("EPRv2")
+cat(current.time,"\n")
+print("Candidates are elected by voters grading all the candidates using the values: ")
+print("6=Excellent, 5=Very Good, 4=Good, 3=Acceptable, 2=Poor, 1=Reject.")
+print("The count is complete by the end of Stage 4.")
+
+# NOTE: These paramaters must be set to define the operation of the algorithm
+cat("Parameters defined for this run of the algorithm\n")
 cat("Ballot data file:", external.data.name, "\n")
 positions <- 7 # number of open positions to fill with candidates
 cat("Positions to fill with candidates:", positions, "\n")
@@ -17,15 +26,6 @@ limit.percent <-
 cat("Percentage of votes after which a candidate must transfer votes they receive:", limit.percent, "%\n")
 setwd("/users/stevanleonard/dropbox/Documents/EPR Steve Bosworth/")
 # end of user defined parameters
-
-sink(paste("EPRv2-", external.data.name, ".txt", sep="")) # send output to file
-today <- Sys.Date()
-format(today, format = "%B %d %Y")
-print("EPRv2")
-print(today)
-print("Candidates are elected by voters grading all the candidates using the values: ")
-print("6=Excellent, 5=Very Good, 4=Good, 3=Acceptable, 2=Poor, 1=Reject.")
-print("The count is complete by the end of Stage 4.")
 
 # Initialize general values and read in voter data
 grades <-
@@ -40,18 +40,30 @@ voter.mat <-
     header = FALSE
   ))
 voters <- nrow(voter.mat)
-vote.limit <- round(voters * limit.percent / 100)
 candidates <- ncol(voter.mat)
-if (vote.limit < round(voters / candidates)) {
-  vote.limit <- round(voters / candidates)
+for (k in 1:voters) {
+  for (l in 1:candidates)
+    if ((is.na(voter.mat[k,l]))) {
+      cat("Error in input ballot data: unequal length at row", k, "\n")
+      stop("Program is terminating")
+  }
+  if ((min(voter.mat[k, ]) < 1) || (max(voter.mat[k, ] > 6))) {
+    cat("Error in input ballot data: Value less than 1 or greater than 6 in row", k, "\n")
+    stop("Program is terminating")
+  }
+}
+
+vote.limit <- round(voters * limit.percent / 100)
+if (vote.limit < round(voters / positions)) {
+  vote.limit <- round(voters / positions)
   print(
     paste(
       "* * * NOTE: vote.limit set to ",
       vote.limit,
-      "to meet meet limit set by voters/candidates",
+      "to meet meet minimum set by voters/positions",
       voters,
       "/",
-      candidates
+      positions
     )
   )
 }
@@ -487,8 +499,7 @@ while ((max.weight <- max(weights.stage2)) > vote.limit) {
     if (xfer.proxy.count < transfer.count) {
       # in Stage 2, this should never happen as each candidate can assign any number
       # of their voters as proxy votes. See Stage 3 for implementation of proxy votes
-      print("* * * ERROR: candidate does not have enough voters to handle proxy votes")
-      stop()
+      stop("* * * ERROR: candidate does not have enough voters to handle proxy votes")
       # save the default proxy votes for this candidate that could not be transferred
       candidate.proxy.default[transfer.candidate] <-
         transfer.count - xfer.proxy.count
@@ -560,8 +571,7 @@ if (candidate.count < positions) {
   cat(
     "then the third, etc. If necessary, repeat this action of one at a time transfers until each of the target number of winner has received at least one vote.\n"
   )
-  cat("\n***This contingency is not yet implemented.***\n")
-  stop()
+  stop("* * * ERROR: This contingency is not yet implemented.\n")
 }
 # select the elected candidates
 candidates.sorted <-
@@ -818,8 +828,7 @@ if (candidate.count > positions) {
       if (xfer.proxy.count < transfer.count) {
         # in Stage 3, this should never happen as each candidate can assign any number
         # of their voters as proxy votes.
-        print("* * * ERROR: candidate does not have enough voters to handle proxy votes")
-        stop()
+        stop("* * * ERROR: candidate does not have enough voters to handle proxy votes")
         # save the proxy votes for this candidate that could not be transferred
         candidate.proxy.default[transfer.candidate] <-
           transfer.count - xfer.proxy.count

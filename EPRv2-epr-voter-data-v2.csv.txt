@@ -1,8 +1,12 @@
 [1] "EPRv2"
-[1] "2019-07-07"
+Thu Jul 11 22:04:31 2019 
 [1] "Candidates are elected by voters grading all the candidates using the values: "
 [1] "6=Excellent, 5=Very Good, 4=Good, 3=Acceptable, 2=Poor, 1=Reject."
 [1] "The count is complete by the end of Stage 4."
+Parameters defined for this run of the algorithm
+Ballot data file: epr-voter-data-v2.csv 
+Positions to fill with candidates: 7 
+Percentage of votes after which a candidate must transfer votes they receive: 20 %
 [1] "Begin Stage 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
 Perform an initial count of affirmed evaluations for all candidates. This count is determined in multiple rounds by giving the candidate with the most votes at the current grade that number of votes.
 [1] "*******************************************************"
@@ -1289,17 +1293,16 @@ weights.stage1 "21" "4"  "11" "8"  "5"  "6"  "4"  "4"  "3"  "2"
 [69,] "Voter 69"  NA              NA         
 [70,] "Voter 70"  NA              NA         
 [1] "A  has the following supporters: "
- [1] "Voter 1"  "Voter 2"  "Voter 3"  "Voter 4"  "Voter 5"  "Voter 6"  "Voter 7" 
- [8] "Voter 8"  "Voter 9"  "Voter 14" "Voter 15" "Voter 16" "Voter 17" "Voter 18"
-[15] "Voter 19" "Voter 20" "Voter 21" "Voter 22" "Voter 23" "Voter 52" "Voter 53"
+ [1] "Voter 1"  "Voter 2"  "Voter 3"  "Voter 4"  "Voter 5"  "Voter 6"  "Voter 7"  "Voter 8"  "Voter 9" 
+[10] "Voter 14" "Voter 15" "Voter 16" "Voter 17" "Voter 18" "Voter 19" "Voter 20" "Voter 21" "Voter 22"
+[19] "Voter 23" "Voter 52" "Voter 53"
 [1] "B  has the following supporters: "
 [1] "Voter 10" "Voter 11" "Voter 12" "Voter 13"
 [1] "C  has the following supporters: "
- [1] "Voter 24" "Voter 25" "Voter 26" "Voter 27" "Voter 28" "Voter 29" "Voter 30"
- [8] "Voter 58" "Voter 59" "Voter 63" "Voter 64"
+ [1] "Voter 24" "Voter 25" "Voter 26" "Voter 27" "Voter 28" "Voter 29" "Voter 30" "Voter 58" "Voter 59"
+[10] "Voter 63" "Voter 64"
 [1] "D  has the following supporters: "
-[1] "Voter 31" "Voter 32" "Voter 33" "Voter 34" "Voter 35" "Voter 36" "Voter 65"
-[8] "Voter 66"
+[1] "Voter 31" "Voter 32" "Voter 33" "Voter 34" "Voter 35" "Voter 36" "Voter 65" "Voter 66"
 [1] "E  has the following supporters: "
 [1] "Voter 37" "Voter 38" "Voter 39" "Voter 40" "Voter 41"
 [1] "F  has the following supporters: "
