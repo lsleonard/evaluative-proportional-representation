@@ -1,4 +1,4 @@
-# 7/7/19 LSL continue vote count until every voter's preferences are allotted to candidates
+# 7/18/19 LSL continue vote count until every voter's preferences are allotted to candidates
 # 12/16/18 LSL copied code from 18-11-12-Anders-newAlgorithm.docx
 
 # Init program: remove old data, set random seed
@@ -6,7 +6,7 @@ rm(list = ls())
 set.seed(1)
 
 external.data.name <-
-  "epr-voter-data-v2.csv" # name of input ballot data
+  "epr-min-under-repr2.csv" # required name of input ballot data
 sink(paste("EPRv2-", external.data.name, ".txt", sep="")) # send output to file
 
 current.time <- format(Sys.time(), "%a %b %d %X %Y")
@@ -16,10 +16,11 @@ print("Candidates are elected by voters grading all the candidates using the val
 print("6=Excellent, 5=Very Good, 4=Good, 3=Acceptable, 2=Poor, 1=Reject.")
 print("The count is complete by the end of Stage 4.")
 
-# NOTE: These paramaters must be set to define the operation of the algorithm
+# NOTE: In addition to defining external.data.name above, these paramaters must be set 
+#       to define the operation of the algorithm
 cat("Parameters defined for this run of the algorithm\n")
 cat("Ballot data file:", external.data.name, "\n")
-positions <- 7 # number of open positions to fill with candidates
+positions <- 3 # number of open positions to fill with candidates
 cat("Positions to fill with candidates:", positions, "\n")
 limit.percent <-
   20 # each candidate must transfer votes they receive beyond the limit
@@ -860,16 +861,13 @@ print(rbind(candidate.names[council.numbers], weights.stage3))
 cat("\n")
 print("Begin Stage 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
 cat("Finalize the weighted votes of each winner as follows:\n")
-cat("Starting with the unelected candidate with the largest number of proxy votes to transfer, ")
+cat("Starting with the candidate with the largest number of affirmed evaluations, ")
 cat(
-  "all the proxy votes held by each unelected candidate must be publicly transferred to any of the winners. "
+  "publicly transfer all their proxy votes to any of the winners they find most suitable for office. "
 )
 cat("Resolve any ties by lot.\n")
-cat("Finally, starting with the winner with most proxy votes to transfer, ")
-cat("publicly transfer these votes to any of the other winners. Continue with the remaining ")
-cat(
-  "elected candidate with the most proxy votes to transfer until all proxy votes are transferred.\n"
-)
+cat("Continuing with the candidate with the next most affirmed evaluations, ")
+cat("publicly transfer their proxy votes as described for the first candidate to transfer, and continue the process until all proxy votes are transferred.\n")
 # accumulate the voters with proxy votes to be transferred
 voter.names.stage4 <- NULL
 voter.candidate.stage4 <- NULL
