@@ -1,0 +1,564 @@
+[1] "EPRv2"
+Thu Jul 11 21:49:51 2019 
+[1] "Candidates are elected by voters grading all the candidates using the values: "
+[1] "6=Excellent, 5=Very Good, 4=Good, 3=Acceptable, 2=Poor, 1=Reject."
+[1] "The count is complete by the end of Stage 4."
+Parameters defined for this run of the algorithm
+Ballot data file: epr-min-over-repr.csv 
+Positions to fill with candidates: 3 
+Percentage of votes after which a candidate must transfer votes they receive: 20 %
+[1] "* * * NOTE: vote.limit set to  10 to meet meet minimum set by voters/positions 30 / 3"
+[1] "Begin Stage 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+Perform an initial count of affirmed evaluations for all candidates. This count is determined in multiple rounds by giving the candidate with the most votes at the current grade that number of votes.
+[1] "*******************************************************"
+[1] "ROUND: 1"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D
+Voter 1  6 5 4 3
+Voter 2  6 5 4 3
+Voter 3  6 5 4 3
+Voter 4  6 5 4 3
+Voter 5  6 5 4 3
+Voter 6  6 5 4 3
+Voter 7  6 5 4 3
+Voter 8  6 5 4 3
+Voter 9  6 5 4 3
+Voter 10 6 5 4 3
+Voter 11 2 3 1 1
+Voter 12 2 3 1 1
+Voter 13 5 6 4 3
+Voter 14 5 6 4 3
+Voter 15 5 6 4 3
+Voter 16 5 6 4 3
+Voter 17 5 6 4 3
+Voter 18 5 6 4 3
+Voter 19 5 6 4 3
+Voter 20 5 6 4 3
+Voter 21 3 3 5 4
+Voter 22 3 3 5 4
+Voter 23 3 3 5 4
+Voter 24 3 3 5 4
+Voter 25 3 3 5 4
+Voter 26 3 3 5 4
+Voter 27 3 3 4 5
+Voter 28 2 2 3 3
+Voter 29 2 2 3 3
+Voter 30 2 2 3 3
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+candidate.vec1 "10" "8"  "0"  "0" 
+[1] "The winner of round 1 is: A, with 10 affirmed evaluations."
+[1] "Winner number:  1"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 1:"
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+weights.stage1 "10" "0"  "0"  "0" 
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "A"             "1"        
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  NA              NA         
+[14,] "Voter 14"  NA              NA         
+[15,] "Voter 15"  NA              NA         
+[16,] "Voter 16"  NA              NA         
+[17,] "Voter 17"  NA              NA         
+[18,] "Voter 18"  NA              NA         
+[19,] "Voter 19"  NA              NA         
+[20,] "Voter 20"  NA              NA         
+[21,] "Voter 21"  NA              NA         
+[22,] "Voter 22"  NA              NA         
+[23,] "Voter 23"  NA              NA         
+[24,] "Voter 24"  NA              NA         
+[25,] "Voter 25"  NA              NA         
+[26,] "Voter 26"  NA              NA         
+[27,] "Voter 27"  NA              NA         
+[28,] "Voter 28"  NA              NA         
+[29,] "Voter 29"  NA              NA         
+[30,] "Voter 30"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 2"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D
+Voter 11 2 3 1 1
+Voter 12 2 3 1 1
+Voter 13 5 6 4 3
+Voter 14 5 6 4 3
+Voter 15 5 6 4 3
+Voter 16 5 6 4 3
+Voter 17 5 6 4 3
+Voter 18 5 6 4 3
+Voter 19 5 6 4 3
+Voter 20 5 6 4 3
+Voter 21 3 3 5 4
+Voter 22 3 3 5 4
+Voter 23 3 3 5 4
+Voter 24 3 3 5 4
+Voter 25 3 3 5 4
+Voter 26 3 3 5 4
+Voter 27 3 3 4 5
+Voter 28 2 2 3 3
+Voter 29 2 2 3 3
+Voter 30 2 2 3 3
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+candidate.vec1 "0"  "8"  "0"  "0" 
+[1] "The winner of round 2 is: B, with 8 affirmed evaluations."
+[1] "Winner number:  2"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 2:"
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+weights.stage1 "10" "8"  "0"  "0" 
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "A"             "1"        
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  "B"             "2"        
+[14,] "Voter 14"  "B"             "2"        
+[15,] "Voter 15"  "B"             "2"        
+[16,] "Voter 16"  "B"             "2"        
+[17,] "Voter 17"  "B"             "2"        
+[18,] "Voter 18"  "B"             "2"        
+[19,] "Voter 19"  "B"             "2"        
+[20,] "Voter 20"  "B"             "2"        
+[21,] "Voter 21"  NA              NA         
+[22,] "Voter 22"  NA              NA         
+[23,] "Voter 23"  NA              NA         
+[24,] "Voter 24"  NA              NA         
+[25,] "Voter 25"  NA              NA         
+[26,] "Voter 26"  NA              NA         
+[27,] "Voter 27"  NA              NA         
+[28,] "Voter 28"  NA              NA         
+[29,] "Voter 29"  NA              NA         
+[30,] "Voter 30"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 3"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D
+Voter 11 2 3 1 1
+Voter 12 2 3 1 1
+Voter 21 3 3 5 4
+Voter 22 3 3 5 4
+Voter 23 3 3 5 4
+Voter 24 3 3 5 4
+Voter 25 3 3 5 4
+Voter 26 3 3 5 4
+Voter 27 3 3 4 5
+Voter 28 2 2 3 3
+Voter 29 2 2 3 3
+Voter 30 2 2 3 3
+[1] "Selector: 5 (Very good)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+candidate.vec1 "0"  "0"  "6"  "1" 
+[1] "The winner of round 3 is: C, with 6 affirmed evaluations."
+[1] "Winner number:  3"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 3:"
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+weights.stage1 "10" "8"  "6"  "0" 
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "A"             "1"        
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  "B"             "2"        
+[14,] "Voter 14"  "B"             "2"        
+[15,] "Voter 15"  "B"             "2"        
+[16,] "Voter 16"  "B"             "2"        
+[17,] "Voter 17"  "B"             "2"        
+[18,] "Voter 18"  "B"             "2"        
+[19,] "Voter 19"  "B"             "2"        
+[20,] "Voter 20"  "B"             "2"        
+[21,] "Voter 21"  "C"             "3"        
+[22,] "Voter 22"  "C"             "3"        
+[23,] "Voter 23"  "C"             "3"        
+[24,] "Voter 24"  "C"             "3"        
+[25,] "Voter 25"  "C"             "3"        
+[26,] "Voter 26"  "C"             "3"        
+[27,] "Voter 27"  NA              NA         
+[28,] "Voter 28"  NA              NA         
+[29,] "Voter 29"  NA              NA         
+[30,] "Voter 30"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 4"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D
+Voter 11 2 3 1 1
+Voter 12 2 3 1 1
+Voter 27 3 3 4 5
+Voter 28 2 2 3 3
+Voter 29 2 2 3 3
+Voter 30 2 2 3 3
+[1] "Selector: 5 (Very good)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+candidate.vec1 "0"  "0"  "0"  "1" 
+[1] "The winner of round 4 is: D, with 1 affirmed evaluations."
+[1] "Winner number:  4"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 4:"
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+weights.stage1 "10" "8"  "6"  "1" 
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "A"             "1"        
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  "B"             "2"        
+[14,] "Voter 14"  "B"             "2"        
+[15,] "Voter 15"  "B"             "2"        
+[16,] "Voter 16"  "B"             "2"        
+[17,] "Voter 17"  "B"             "2"        
+[18,] "Voter 18"  "B"             "2"        
+[19,] "Voter 19"  "B"             "2"        
+[20,] "Voter 20"  "B"             "2"        
+[21,] "Voter 21"  "C"             "3"        
+[22,] "Voter 22"  "C"             "3"        
+[23,] "Voter 23"  "C"             "3"        
+[24,] "Voter 24"  "C"             "3"        
+[25,] "Voter 25"  "C"             "3"        
+[26,] "Voter 26"  "C"             "3"        
+[27,] "Voter 27"  "D"             "4"        
+[28,] "Voter 28"  NA              NA         
+[29,] "Voter 29"  NA              NA         
+[30,] "Voter 30"  NA              NA         
+[1] "*******************************************************"
+[1] "ROUND: 5"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D
+Voter 11 2 3 1 1
+Voter 12 2 3 1 1
+Voter 28 2 2 3 3
+Voter 29 2 2 3 3
+Voter 30 2 2 3 3
+[1] "Selector: 4 (Good)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+candidate.vec1 "0"  "0"  "0"  "0" 
+No grades for selector 4 ( Good ).
+[1] "*******************************************************"
+[1] "ROUND: 6"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D
+Voter 11 2 3 1 1
+Voter 12 2 3 1 1
+Voter 28 2 2 3 3
+Voter 29 2 2 3 3
+Voter 30 2 2 3 3
+[1] "Selector: 3 (Acceptable)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+candidate.vec1 "0"  "2"  "3"  "3" 
+Tied winners:  C D 
+Sum of each candidate's ordinal evaluations if counted numerically. Used first to break ties before one of the candidates with the same score is chosen randomly.
+[1] 0 6 9 9
+[1] "The winner of round 6 is: C, with 3 affirmed evaluations."
+[1] "Winner number:  3"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 6:"
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+weights.stage1 "10" "8"  "9"  "1" 
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "A"             "1"        
+[11,] "Voter 11"  NA              NA         
+[12,] "Voter 12"  NA              NA         
+[13,] "Voter 13"  "B"             "2"        
+[14,] "Voter 14"  "B"             "2"        
+[15,] "Voter 15"  "B"             "2"        
+[16,] "Voter 16"  "B"             "2"        
+[17,] "Voter 17"  "B"             "2"        
+[18,] "Voter 18"  "B"             "2"        
+[19,] "Voter 19"  "B"             "2"        
+[20,] "Voter 20"  "B"             "2"        
+[21,] "Voter 21"  "C"             "3"        
+[22,] "Voter 22"  "C"             "3"        
+[23,] "Voter 23"  "C"             "3"        
+[24,] "Voter 24"  "C"             "3"        
+[25,] "Voter 25"  "C"             "3"        
+[26,] "Voter 26"  "C"             "3"        
+[27,] "Voter 27"  "D"             "4"        
+[28,] "Voter 28"  "C"             "6"        
+[29,] "Voter 29"  "C"             "6"        
+[30,] "Voter 30"  "C"             "6"        
+[1] "*******************************************************"
+[1] "ROUND: 7"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D
+Voter 11 2 3 1 1
+Voter 12 2 3 1 1
+[1] "Selector: 3 (Acceptable)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+candidate.vec1 "0"  "2"  "0"  "0" 
+[1] "The winner of round 7 is: B, with 2 affirmed evaluations."
+[1] "Winner number:  2"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 7:"
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+weights.stage1 "10" "10" "9"  "1" 
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "A"             "1"        
+[11,] "Voter 11"  "B"             "7"        
+[12,] "Voter 12"  "B"             "7"        
+[13,] "Voter 13"  "B"             "2"        
+[14,] "Voter 14"  "B"             "2"        
+[15,] "Voter 15"  "B"             "2"        
+[16,] "Voter 16"  "B"             "2"        
+[17,] "Voter 17"  "B"             "2"        
+[18,] "Voter 18"  "B"             "2"        
+[19,] "Voter 19"  "B"             "2"        
+[20,] "Voter 20"  "B"             "2"        
+[21,] "Voter 21"  "C"             "3"        
+[22,] "Voter 22"  "C"             "3"        
+[23,] "Voter 23"  "C"             "3"        
+[24,] "Voter 24"  "C"             "3"        
+[25,] "Voter 25"  "C"             "3"        
+[26,] "Voter 26"  "C"             "3"        
+[27,] "Voter 27"  "D"             "4"        
+[28,] "Voter 28"  "C"             "6"        
+[29,] "Voter 29"  "C"             "6"        
+[30,] "Voter 30"  "C"             "6"        
+[1] "A  has the following supporters: "
+ [1] "Voter 1"  "Voter 2"  "Voter 3"  "Voter 4"  "Voter 5"  "Voter 6"  "Voter 7"  "Voter 8"  "Voter 9" 
+[10] "Voter 10"
+[1] "B  has the following supporters: "
+ [1] "Voter 11" "Voter 12" "Voter 13" "Voter 14" "Voter 15" "Voter 16" "Voter 17" "Voter 18" "Voter 19"
+[10] "Voter 20"
+[1] "C  has the following supporters: "
+[1] "Voter 21" "Voter 22" "Voter 23" "Voter 24" "Voter 25" "Voter 26" "Voter 28" "Voter 29" "Voter 30"
+[1] "D  has the following supporters: "
+[1] "Voter 27"
+[1] "End Stage 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+[1] "Vote apportionment after Stage 1: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "A"             "1"        
+[11,] "Voter 11"  "B"             "7"        
+[12,] "Voter 12"  "B"             "7"        
+[13,] "Voter 13"  "B"             "2"        
+[14,] "Voter 14"  "B"             "2"        
+[15,] "Voter 15"  "B"             "2"        
+[16,] "Voter 16"  "B"             "2"        
+[17,] "Voter 17"  "B"             "2"        
+[18,] "Voter 18"  "B"             "2"        
+[19,] "Voter 19"  "B"             "2"        
+[20,] "Voter 20"  "B"             "2"        
+[21,] "Voter 21"  "C"             "3"        
+[22,] "Voter 22"  "C"             "3"        
+[23,] "Voter 23"  "C"             "3"        
+[24,] "Voter 24"  "C"             "3"        
+[25,] "Voter 25"  "C"             "3"        
+[26,] "Voter 26"  "C"             "3"        
+[27,] "Voter 27"  "D"             "4"        
+[28,] "Voter 28"  "C"             "6"        
+[29,] "Voter 29"  "C"             "6"        
+[30,] "Voter 30"  "C"             "6"        
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4]
+               "A"  "B"  "C"  "D" 
+weights.stage1 "10" "10" "9"  "1" 
+[1] "Begin Stage 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+[1] "Limit of 10 votes per candidate based on 20% of voters (30)"
+During Stage 2, if some of the extra votes initially held by an overly popular candidate cannot be automatically transferred, the remaining votes that must be transferred become proxy votes that must be transferred publicly during the last step in Stage 4 to any of the other winners judged by the relevant overly popular winner to be most fit for office.
+[1] "End Stage 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+[1] "Vote apportionment after Stage 2: "
+      voter.names voter.candidate voter.round voter.transfer
+ [1,] "Voter 1"   "A"             "1"         NA            
+ [2,] "Voter 2"   "A"             "1"         NA            
+ [3,] "Voter 3"   "A"             "1"         NA            
+ [4,] "Voter 4"   "A"             "1"         NA            
+ [5,] "Voter 5"   "A"             "1"         NA            
+ [6,] "Voter 6"   "A"             "1"         NA            
+ [7,] "Voter 7"   "A"             "1"         NA            
+ [8,] "Voter 8"   "A"             "1"         NA            
+ [9,] "Voter 9"   "A"             "1"         NA            
+[10,] "Voter 10"  "A"             "1"         NA            
+[11,] "Voter 11"  "B"             "7"         NA            
+[12,] "Voter 12"  "B"             "7"         NA            
+[13,] "Voter 13"  "B"             "2"         NA            
+[14,] "Voter 14"  "B"             "2"         NA            
+[15,] "Voter 15"  "B"             "2"         NA            
+[16,] "Voter 16"  "B"             "2"         NA            
+[17,] "Voter 17"  "B"             "2"         NA            
+[18,] "Voter 18"  "B"             "2"         NA            
+[19,] "Voter 19"  "B"             "2"         NA            
+[20,] "Voter 20"  "B"             "2"         NA            
+[21,] "Voter 21"  "C"             "3"         NA            
+[22,] "Voter 22"  "C"             "3"         NA            
+[23,] "Voter 23"  "C"             "3"         NA            
+[24,] "Voter 24"  "C"             "3"         NA            
+[25,] "Voter 25"  "C"             "3"         NA            
+[26,] "Voter 26"  "C"             "3"         NA            
+[27,] "Voter 27"  "D"             "4"         NA            
+[28,] "Voter 28"  "C"             "6"         NA            
+[29,] "Voter 29"  "C"             "6"         NA            
+[30,] "Voter 30"  "C"             "6"         NA            
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4]
+               "A"  "B"  "C"  "D" 
+weights.stage2 "10" "10" "9"  "1" 
+[1] "Begin Stage 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+Step 1: Determine the elected candidates.
+Step 2: Transfer votes from unelected candidates to those selected as winning candidates as follows:
+Starting with the unelected candidate currently holding the largest number of affirmed evaluations, transfer all their votes that can be transferred automatically by the algorithm to any of the winners. If necessary, resolve any ties by lot.
+
+Stage 3, Step 1: Select the 3 candidates to be elected.
+[1] "Candidates' affirmed evaluations in descending order and corresponding candidate"
+                  [,1] [,2] [,3] [,4]
+                  "A"  "B"  "C"  "D" 
+candidates.sorted "10" "10" "9"  "1" 
+[1] "Winning candidates and weights"
+     [,1] [,2] [,3]
+[1,] "A"  "B"  "C" 
+[2,] "10" "10" "9" 
+
+Stage 3, Step 2: Transfer votes from unelected candidates to elected candidates
+[1] "**********************"
+Stage 3, Step 2 transfer loop  1 
+[1] "**********************"
+[1] "Transfer 1 votes (highest affirmed evaluations) from unselected candidate D"
+Voters' ballots to select from: 27 
+[1] "Next highest graded candidate by voter:"
+[1] "voter 27 candidate C"
+Candidates eligible to receive Stage 3 transfers:
+                  [,1] [,2] [,3] [,4]
+council           "A"  "B"  "C"  "D" 
+candidates.stage3 "0"  "0"  "1"  "0" 
+Transfer  1  votes from candidate  D to  C 
+Voters' ballots to transfer:  26 
+[1] "Remaining weights held by unelected candidates:"
+                        [,1] [,2] [,3] [,4]
+council                 "A"  "B"  "C"  "D" 
+weights.stage3.transfer "0"  "0"  "0"  "0" 
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4]
+council        "A"  "B"  "C"  "D" 
+weights.stage3 "10" "10" "10" "0" 
+[1] "End Stage 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+[1] "Vote apportionment after Stage 3: "
+      voter.names voter.candidate voter.round voter.transfer
+ [1,] "Voter 1"   "A"             "1"         NA            
+ [2,] "Voter 2"   "A"             "1"         NA            
+ [3,] "Voter 3"   "A"             "1"         NA            
+ [4,] "Voter 4"   "A"             "1"         NA            
+ [5,] "Voter 5"   "A"             "1"         NA            
+ [6,] "Voter 6"   "A"             "1"         NA            
+ [7,] "Voter 7"   "A"             "1"         NA            
+ [8,] "Voter 8"   "A"             "1"         NA            
+ [9,] "Voter 9"   "A"             "1"         NA            
+[10,] "Voter 10"  "A"             "1"         NA            
+[11,] "Voter 11"  "B"             "7"         NA            
+[12,] "Voter 12"  "B"             "7"         NA            
+[13,] "Voter 13"  "B"             "2"         NA            
+[14,] "Voter 14"  "B"             "2"         NA            
+[15,] "Voter 15"  "B"             "2"         NA            
+[16,] "Voter 16"  "B"             "2"         NA            
+[17,] "Voter 17"  "B"             "2"         NA            
+[18,] "Voter 18"  "B"             "2"         NA            
+[19,] "Voter 19"  "B"             "2"         NA            
+[20,] "Voter 20"  "B"             "2"         NA            
+[21,] "Voter 21"  "C"             "3"         NA            
+[22,] "Voter 22"  "C"             "3"         NA            
+[23,] "Voter 23"  "C"             "3"         NA            
+[24,] "Voter 24"  "C"             "3"         NA            
+[25,] "Voter 25"  "C"             "3"         NA            
+[26,] "Voter 26"  "C"             "3"         "From D to C" 
+[27,] "Voter 27"  "D"             "4"         NA            
+[28,] "Voter 28"  "C"             "6"         NA            
+[29,] "Voter 29"  "C"             "6"         NA            
+[30,] "Voter 30"  "C"             "6"         NA            
+[1] "Affirmed evaluations for winning candidates"
+               [,1] [,2] [,3] [,4]
+               "A"  "B"  "C"  "D" 
+weights.stage3 "10" "10" "10" "0" 
+
+[1] "Begin Stage 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+Finalize the weighted votes of each winner as follows:
+Starting with the unelected candidate with the largest number of proxy votes to transfer, all the proxy votes held by each unelected candidate must be publicly transferred to any of the winners. Resolve any ties by lot.
+Finally, starting with the winner with most proxy votes to transfer, publicly transfer these votes to any of the other winners. Continue with the remaining elected candidate with the most proxy votes to transfer until all proxy votes are transferred.
+[1] "No proxy votes to transfer"
+[1] "End Stage 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+
+[1] "******** End of EPR output **********"

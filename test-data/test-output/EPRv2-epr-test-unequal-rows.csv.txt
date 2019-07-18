@@ -1,0 +1,10 @@
+[1] "EPRv2"
+Thu Jul 11 21:22:19 2019 
+[1] "Candidates are elected by voters grading all the candidates using the values: "
+[1] "6=Excellent, 5=Very Good, 4=Good, 3=Acceptable, 2=Poor, 1=Reject."
+[1] "The count is complete by the end of Stage 4."
+Parameters defined for this run of the algorithm
+Ballot data file: epr-test-unequal-rows.csv 
+Positions to fill with candidates: 7 
+Percentage of votes after which a candidate must transfer votes they receive: 20 %
+Error in input ballot data: unequal length at row 3 

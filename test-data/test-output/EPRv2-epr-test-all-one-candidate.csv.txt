@@ -1,0 +1,388 @@
+[1] "EPRv2"
+Thu Jul 11 21:10:03 2019 
+[1] "Candidates are elected by voters grading all the candidates using the values: "
+[1] "6=Excellent, 5=Very Good, 4=Good, 3=Acceptable, 2=Poor, 1=Reject."
+[1] "The count is complete by the end of Stage 4."
+Parameters defined for this run of the algorithm
+Ballot data file: epr-test-all-one-candidate.csv 
+Positions to fill with candidates: 7 
+Percentage of votes after which a candidate must transfer votes they receive: 20 %
+[1] "Begin Stage 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+Perform an initial count of affirmed evaluations for all candidates. This count is determined in multiple rounds by giving the candidate with the most votes at the current grade that number of votes.
+[1] "*******************************************************"
+[1] "ROUND: 1"
+[1] "*******************************************************"
+[1] "Ballots remaining:"
+         A B C D E F G H I J
+Voter 1  6 1 1 1 1 1 1 1 1 1
+Voter 2  6 1 1 1 1 1 1 1 1 1
+Voter 3  6 1 1 1 1 1 1 1 1 1
+Voter 4  6 1 1 1 1 1 1 1 1 1
+Voter 5  6 1 1 1 1 1 1 1 1 1
+Voter 6  6 1 1 1 1 1 1 1 1 1
+Voter 7  6 1 1 1 1 1 1 1 1 1
+Voter 8  6 1 1 1 1 1 1 1 1 1
+Voter 9  6 1 1 1 1 1 1 1 1 1
+Voter 10 6 1 1 1 1 1 1 1 1 1
+Voter 11 6 1 1 1 1 1 1 1 1 1
+Voter 12 6 1 1 1 1 1 1 1 1 1
+Voter 13 6 1 1 1 1 1 1 1 1 1
+Voter 14 6 1 1 1 1 1 1 1 1 1
+Voter 15 6 1 1 1 1 1 1 1 1 1
+Voter 16 6 1 1 1 1 1 1 1 1 1
+Voter 17 6 1 1 1 1 1 1 1 1 1
+Voter 18 6 1 1 1 1 1 1 1 1 1
+Voter 19 6 1 1 1 1 1 1 1 1 1
+Voter 20 6 1 1 1 1 1 1 1 1 1
+Voter 21 6 1 1 1 1 1 1 1 1 1
+Voter 22 6 1 1 1 1 1 1 1 1 1
+Voter 23 6 1 1 1 1 1 1 1 1 1
+Voter 24 6 1 1 1 1 1 1 1 1 1
+Voter 25 6 1 1 1 1 1 1 1 1 1
+Voter 26 6 1 1 1 1 1 1 1 1 1
+Voter 27 6 1 1 1 1 1 1 1 1 1
+Voter 28 6 1 1 1 1 1 1 1 1 1
+Voter 29 6 1 1 1 1 1 1 1 1 1
+Voter 30 6 1 1 1 1 1 1 1 1 1
+Voter 31 6 1 1 1 1 1 1 1 1 1
+Voter 32 6 1 1 1 1 1 1 1 1 1
+Voter 33 6 1 1 1 1 1 1 1 1 1
+Voter 34 6 1 1 1 1 1 1 1 1 1
+Voter 35 6 1 1 1 1 1 1 1 1 1
+Voter 36 6 1 1 1 1 1 1 1 1 1
+Voter 37 6 1 1 1 1 1 1 1 1 1
+Voter 38 6 1 1 1 1 1 1 1 1 1
+Voter 39 6 1 1 1 1 1 1 1 1 1
+Voter 40 6 1 1 1 1 1 1 1 1 1
+Voter 41 6 1 1 1 1 1 1 1 1 1
+Voter 42 6 1 1 1 1 1 1 1 1 1
+Voter 43 6 1 1 1 1 1 1 1 1 1
+Voter 44 6 1 1 1 1 1 1 1 1 1
+Voter 45 6 1 1 1 1 1 1 1 1 1
+Voter 46 6 1 1 1 1 1 1 1 1 1
+Voter 47 6 1 1 1 1 1 1 1 1 1
+Voter 48 6 1 1 1 1 1 1 1 1 1
+Voter 49 6 1 1 1 1 1 1 1 1 1
+Voter 50 6 1 1 1 1 1 1 1 1 1
+Voter 51 6 1 1 1 1 1 1 1 1 1
+Voter 52 6 1 1 1 1 1 1 1 1 1
+Voter 53 6 1 1 1 1 1 1 1 1 1
+Voter 54 6 1 1 1 1 1 1 1 1 1
+Voter 55 6 1 1 1 1 1 1 1 1 1
+Voter 56 6 1 1 1 1 1 1 1 1 1
+Voter 57 6 1 1 1 1 1 1 1 1 1
+Voter 58 6 1 1 1 1 1 1 1 1 1
+Voter 59 6 1 1 1 1 1 1 1 1 1
+Voter 60 6 1 1 1 1 1 1 1 1 1
+Voter 61 6 1 1 1 1 1 1 1 1 1
+Voter 62 6 1 1 1 1 1 1 1 1 1
+Voter 63 6 1 1 1 1 1 1 1 1 1
+Voter 64 6 1 1 1 1 1 1 1 1 1
+Voter 65 6 1 1 1 1 1 1 1 1 1
+Voter 66 6 1 1 1 1 1 1 1 1 1
+Voter 67 6 1 1 1 1 1 1 1 1 1
+Voter 68 6 1 1 1 1 1 1 1 1 1
+Voter 69 6 1 1 1 1 1 1 1 1 1
+Voter 70 6 1 1 1 1 1 1 1 1 1
+[1] "Selector: 6 (Excellent)"
+[1] "Count of affirmed evaluations at selector level: "
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidate.vec1 "70" "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  
+[1] "The winner of round 1 is: A, with 70 affirmed evaluations."
+[1] "Winner number:  1"
+[1] "Weighted votes by candidate (affirmed evaluations) after round 1:"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "70" "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  
+[1] "Votes thus far: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "A"             "1"        
+[11,] "Voter 11"  "A"             "1"        
+[12,] "Voter 12"  "A"             "1"        
+[13,] "Voter 13"  "A"             "1"        
+[14,] "Voter 14"  "A"             "1"        
+[15,] "Voter 15"  "A"             "1"        
+[16,] "Voter 16"  "A"             "1"        
+[17,] "Voter 17"  "A"             "1"        
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "A"             "1"        
+[25,] "Voter 25"  "A"             "1"        
+[26,] "Voter 26"  "A"             "1"        
+[27,] "Voter 27"  "A"             "1"        
+[28,] "Voter 28"  "A"             "1"        
+[29,] "Voter 29"  "A"             "1"        
+[30,] "Voter 30"  "A"             "1"        
+[31,] "Voter 31"  "A"             "1"        
+[32,] "Voter 32"  "A"             "1"        
+[33,] "Voter 33"  "A"             "1"        
+[34,] "Voter 34"  "A"             "1"        
+[35,] "Voter 35"  "A"             "1"        
+[36,] "Voter 36"  "A"             "1"        
+[37,] "Voter 37"  "A"             "1"        
+[38,] "Voter 38"  "A"             "1"        
+[39,] "Voter 39"  "A"             "1"        
+[40,] "Voter 40"  "A"             "1"        
+[41,] "Voter 41"  "A"             "1"        
+[42,] "Voter 42"  "A"             "1"        
+[43,] "Voter 43"  "A"             "1"        
+[44,] "Voter 44"  "A"             "1"        
+[45,] "Voter 45"  "A"             "1"        
+[46,] "Voter 46"  "A"             "1"        
+[47,] "Voter 47"  "A"             "1"        
+[48,] "Voter 48"  "A"             "1"        
+[49,] "Voter 49"  "A"             "1"        
+[50,] "Voter 50"  "A"             "1"        
+[51,] "Voter 51"  "A"             "1"        
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  "A"             "1"        
+[55,] "Voter 55"  "A"             "1"        
+[56,] "Voter 56"  "A"             "1"        
+[57,] "Voter 57"  "A"             "1"        
+[58,] "Voter 58"  "A"             "1"        
+[59,] "Voter 59"  "A"             "1"        
+[60,] "Voter 60"  "A"             "1"        
+[61,] "Voter 61"  "A"             "1"        
+[62,] "Voter 62"  "A"             "1"        
+[63,] "Voter 63"  "A"             "1"        
+[64,] "Voter 64"  "A"             "1"        
+[65,] "Voter 65"  "A"             "1"        
+[66,] "Voter 66"  "A"             "1"        
+[67,] "Voter 67"  "A"             "1"        
+[68,] "Voter 68"  "A"             "1"        
+[69,] "Voter 69"  "A"             "1"        
+[70,] "Voter 70"  "A"             "1"        
+[1] "A  has the following supporters: "
+ [1] "Voter 1"  "Voter 2"  "Voter 3"  "Voter 4"  "Voter 5"  "Voter 6"  "Voter 7"  "Voter 8" 
+ [9] "Voter 9"  "Voter 10" "Voter 11" "Voter 12" "Voter 13" "Voter 14" "Voter 15" "Voter 16"
+[17] "Voter 17" "Voter 18" "Voter 19" "Voter 20" "Voter 21" "Voter 22" "Voter 23" "Voter 24"
+[25] "Voter 25" "Voter 26" "Voter 27" "Voter 28" "Voter 29" "Voter 30" "Voter 31" "Voter 32"
+[33] "Voter 33" "Voter 34" "Voter 35" "Voter 36" "Voter 37" "Voter 38" "Voter 39" "Voter 40"
+[41] "Voter 41" "Voter 42" "Voter 43" "Voter 44" "Voter 45" "Voter 46" "Voter 47" "Voter 48"
+[49] "Voter 49" "Voter 50" "Voter 51" "Voter 52" "Voter 53" "Voter 54" "Voter 55" "Voter 56"
+[57] "Voter 57" "Voter 58" "Voter 59" "Voter 60" "Voter 61" "Voter 62" "Voter 63" "Voter 64"
+[65] "Voter 65" "Voter 66" "Voter 67" "Voter 68" "Voter 69" "Voter 70"
+[1] "B  has the following supporters: "
+character(0)
+[1] "C  has the following supporters: "
+character(0)
+[1] "D  has the following supporters: "
+character(0)
+[1] "E  has the following supporters: "
+character(0)
+[1] "F  has the following supporters: "
+character(0)
+[1] "G  has the following supporters: "
+character(0)
+[1] "H  has the following supporters: "
+character(0)
+[1] "I  has the following supporters: "
+character(0)
+[1] "J  has the following supporters: "
+character(0)
+[1] "End Stage 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+[1] "Vote apportionment after Stage 1: "
+      voter.names voter.candidate voter.round
+ [1,] "Voter 1"   "A"             "1"        
+ [2,] "Voter 2"   "A"             "1"        
+ [3,] "Voter 3"   "A"             "1"        
+ [4,] "Voter 4"   "A"             "1"        
+ [5,] "Voter 5"   "A"             "1"        
+ [6,] "Voter 6"   "A"             "1"        
+ [7,] "Voter 7"   "A"             "1"        
+ [8,] "Voter 8"   "A"             "1"        
+ [9,] "Voter 9"   "A"             "1"        
+[10,] "Voter 10"  "A"             "1"        
+[11,] "Voter 11"  "A"             "1"        
+[12,] "Voter 12"  "A"             "1"        
+[13,] "Voter 13"  "A"             "1"        
+[14,] "Voter 14"  "A"             "1"        
+[15,] "Voter 15"  "A"             "1"        
+[16,] "Voter 16"  "A"             "1"        
+[17,] "Voter 17"  "A"             "1"        
+[18,] "Voter 18"  "A"             "1"        
+[19,] "Voter 19"  "A"             "1"        
+[20,] "Voter 20"  "A"             "1"        
+[21,] "Voter 21"  "A"             "1"        
+[22,] "Voter 22"  "A"             "1"        
+[23,] "Voter 23"  "A"             "1"        
+[24,] "Voter 24"  "A"             "1"        
+[25,] "Voter 25"  "A"             "1"        
+[26,] "Voter 26"  "A"             "1"        
+[27,] "Voter 27"  "A"             "1"        
+[28,] "Voter 28"  "A"             "1"        
+[29,] "Voter 29"  "A"             "1"        
+[30,] "Voter 30"  "A"             "1"        
+[31,] "Voter 31"  "A"             "1"        
+[32,] "Voter 32"  "A"             "1"        
+[33,] "Voter 33"  "A"             "1"        
+[34,] "Voter 34"  "A"             "1"        
+[35,] "Voter 35"  "A"             "1"        
+[36,] "Voter 36"  "A"             "1"        
+[37,] "Voter 37"  "A"             "1"        
+[38,] "Voter 38"  "A"             "1"        
+[39,] "Voter 39"  "A"             "1"        
+[40,] "Voter 40"  "A"             "1"        
+[41,] "Voter 41"  "A"             "1"        
+[42,] "Voter 42"  "A"             "1"        
+[43,] "Voter 43"  "A"             "1"        
+[44,] "Voter 44"  "A"             "1"        
+[45,] "Voter 45"  "A"             "1"        
+[46,] "Voter 46"  "A"             "1"        
+[47,] "Voter 47"  "A"             "1"        
+[48,] "Voter 48"  "A"             "1"        
+[49,] "Voter 49"  "A"             "1"        
+[50,] "Voter 50"  "A"             "1"        
+[51,] "Voter 51"  "A"             "1"        
+[52,] "Voter 52"  "A"             "1"        
+[53,] "Voter 53"  "A"             "1"        
+[54,] "Voter 54"  "A"             "1"        
+[55,] "Voter 55"  "A"             "1"        
+[56,] "Voter 56"  "A"             "1"        
+[57,] "Voter 57"  "A"             "1"        
+[58,] "Voter 58"  "A"             "1"        
+[59,] "Voter 59"  "A"             "1"        
+[60,] "Voter 60"  "A"             "1"        
+[61,] "Voter 61"  "A"             "1"        
+[62,] "Voter 62"  "A"             "1"        
+[63,] "Voter 63"  "A"             "1"        
+[64,] "Voter 64"  "A"             "1"        
+[65,] "Voter 65"  "A"             "1"        
+[66,] "Voter 66"  "A"             "1"        
+[67,] "Voter 67"  "A"             "1"        
+[68,] "Voter 68"  "A"             "1"        
+[69,] "Voter 69"  "A"             "1"        
+[70,] "Voter 70"  "A"             "1"        
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+               "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage1 "70" "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  
+[1] "Begin Stage 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+[1] "Limit of 14 votes per candidate based on 20% of voters (70)"
+During Stage 2, if some of the extra votes initially held by an overly popular candidate cannot be automatically transferred, the remaining votes that must be transferred become proxy votes that must be transferred publicly during the last step in Stage 4 to any of the other winners judged by the relevant overly popular winner to be most fit for office.
+[1] "**********************"
+Stage 2 transfer loop  1 
+[1] "**********************"
+Candidates currently holding more than  14 votes:  A 
+Candidate with most votes:  A ( 70 )
+[1] "Transfer 56 votes from candidate A"
+[1] "Select from the following voters' ballots:"
+ [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+[31] 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60
+[61] 61 62 63 64 65 66 67 68 69 70
+[1] "Next highest graded candidate by voter:"
+Candidates and their affirmed evaluations that may receive Stage 2 transfers: 
+                  [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+council           "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+candidates.stage2 "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  
+* * * Proxy votes ( 56 ) required for transfer from candidate  A 
+Voters available to transfer  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 
+Transfer  56  proxy votes for candidate  A  to these voters:
+ [1] 27 40 62 14 60 68 43 69  4 13 11 41 23 44 28 63 54 21 59 48 66 32  7 61 18  1 17 38 15 20
+[31] 24 52  8 31 25 56 65 55 67 26 39 58 16 42 53 45 12 57 35 50 46  9  5  2 29 30
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+               "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage2 "14" "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  
+[1] "End Stage 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+[1] "Vote apportionment after Stage 2: "
+      voter.names voter.candidate voter.round voter.transfer             
+ [1,] "Voter 1"   "A"             "1"         "Proxy vote Stage 2 from A"
+ [2,] "Voter 2"   "A"             "1"         "Proxy vote Stage 2 from A"
+ [3,] "Voter 3"   "A"             "1"         NA                         
+ [4,] "Voter 4"   "A"             "1"         "Proxy vote Stage 2 from A"
+ [5,] "Voter 5"   "A"             "1"         "Proxy vote Stage 2 from A"
+ [6,] "Voter 6"   "A"             "1"         NA                         
+ [7,] "Voter 7"   "A"             "1"         "Proxy vote Stage 2 from A"
+ [8,] "Voter 8"   "A"             "1"         "Proxy vote Stage 2 from A"
+ [9,] "Voter 9"   "A"             "1"         "Proxy vote Stage 2 from A"
+[10,] "Voter 10"  "A"             "1"         NA                         
+[11,] "Voter 11"  "A"             "1"         "Proxy vote Stage 2 from A"
+[12,] "Voter 12"  "A"             "1"         "Proxy vote Stage 2 from A"
+[13,] "Voter 13"  "A"             "1"         "Proxy vote Stage 2 from A"
+[14,] "Voter 14"  "A"             "1"         "Proxy vote Stage 2 from A"
+[15,] "Voter 15"  "A"             "1"         "Proxy vote Stage 2 from A"
+[16,] "Voter 16"  "A"             "1"         "Proxy vote Stage 2 from A"
+[17,] "Voter 17"  "A"             "1"         "Proxy vote Stage 2 from A"
+[18,] "Voter 18"  "A"             "1"         "Proxy vote Stage 2 from A"
+[19,] "Voter 19"  "A"             "1"         NA                         
+[20,] "Voter 20"  "A"             "1"         "Proxy vote Stage 2 from A"
+[21,] "Voter 21"  "A"             "1"         "Proxy vote Stage 2 from A"
+[22,] "Voter 22"  "A"             "1"         NA                         
+[23,] "Voter 23"  "A"             "1"         "Proxy vote Stage 2 from A"
+[24,] "Voter 24"  "A"             "1"         "Proxy vote Stage 2 from A"
+[25,] "Voter 25"  "A"             "1"         "Proxy vote Stage 2 from A"
+[26,] "Voter 26"  "A"             "1"         "Proxy vote Stage 2 from A"
+[27,] "Voter 27"  "A"             "1"         "Proxy vote Stage 2 from A"
+[28,] "Voter 28"  "A"             "1"         "Proxy vote Stage 2 from A"
+[29,] "Voter 29"  "A"             "1"         "Proxy vote Stage 2 from A"
+[30,] "Voter 30"  "A"             "1"         "Proxy vote Stage 2 from A"
+[31,] "Voter 31"  "A"             "1"         "Proxy vote Stage 2 from A"
+[32,] "Voter 32"  "A"             "1"         "Proxy vote Stage 2 from A"
+[33,] "Voter 33"  "A"             "1"         NA                         
+[34,] "Voter 34"  "A"             "1"         NA                         
+[35,] "Voter 35"  "A"             "1"         "Proxy vote Stage 2 from A"
+[36,] "Voter 36"  "A"             "1"         NA                         
+[37,] "Voter 37"  "A"             "1"         NA                         
+[38,] "Voter 38"  "A"             "1"         "Proxy vote Stage 2 from A"
+[39,] "Voter 39"  "A"             "1"         "Proxy vote Stage 2 from A"
+[40,] "Voter 40"  "A"             "1"         "Proxy vote Stage 2 from A"
+[41,] "Voter 41"  "A"             "1"         "Proxy vote Stage 2 from A"
+[42,] "Voter 42"  "A"             "1"         "Proxy vote Stage 2 from A"
+[43,] "Voter 43"  "A"             "1"         "Proxy vote Stage 2 from A"
+[44,] "Voter 44"  "A"             "1"         "Proxy vote Stage 2 from A"
+[45,] "Voter 45"  "A"             "1"         "Proxy vote Stage 2 from A"
+[46,] "Voter 46"  "A"             "1"         "Proxy vote Stage 2 from A"
+[47,] "Voter 47"  "A"             "1"         NA                         
+[48,] "Voter 48"  "A"             "1"         "Proxy vote Stage 2 from A"
+[49,] "Voter 49"  "A"             "1"         NA                         
+[50,] "Voter 50"  "A"             "1"         "Proxy vote Stage 2 from A"
+[51,] "Voter 51"  "A"             "1"         NA                         
+[52,] "Voter 52"  "A"             "1"         "Proxy vote Stage 2 from A"
+[53,] "Voter 53"  "A"             "1"         "Proxy vote Stage 2 from A"
+[54,] "Voter 54"  "A"             "1"         "Proxy vote Stage 2 from A"
+[55,] "Voter 55"  "A"             "1"         "Proxy vote Stage 2 from A"
+[56,] "Voter 56"  "A"             "1"         "Proxy vote Stage 2 from A"
+[57,] "Voter 57"  "A"             "1"         "Proxy vote Stage 2 from A"
+[58,] "Voter 58"  "A"             "1"         "Proxy vote Stage 2 from A"
+[59,] "Voter 59"  "A"             "1"         "Proxy vote Stage 2 from A"
+[60,] "Voter 60"  "A"             "1"         "Proxy vote Stage 2 from A"
+[61,] "Voter 61"  "A"             "1"         "Proxy vote Stage 2 from A"
+[62,] "Voter 62"  "A"             "1"         "Proxy vote Stage 2 from A"
+[63,] "Voter 63"  "A"             "1"         "Proxy vote Stage 2 from A"
+[64,] "Voter 64"  "A"             "1"         NA                         
+[65,] "Voter 65"  "A"             "1"         "Proxy vote Stage 2 from A"
+[66,] "Voter 66"  "A"             "1"         "Proxy vote Stage 2 from A"
+[67,] "Voter 67"  "A"             "1"         "Proxy vote Stage 2 from A"
+[68,] "Voter 68"  "A"             "1"         "Proxy vote Stage 2 from A"
+[69,] "Voter 69"  "A"             "1"         "Proxy vote Stage 2 from A"
+[70,] "Voter 70"  "A"             "1"         NA                         
+[1] "Affirmed evaluations by candidate"
+               [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+               "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
+weights.stage2 "14" "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  "0"  
+[1] "Begin Stage 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+Step 1: Determine the elected candidates.
+Step 2: Transfer votes from unelected candidates to those selected as winning candidates as follows:
+Starting with the unelected candidate currently holding the largest number of affirmed evaluations, transfer all their votes that can be transferred automatically by the algorithm to any of the winners. If necessary, resolve any ties by lot.
+[1] "Contingency 1: Fewer candates with votes 1  than positions to fill 7"
+The number of winners that received affirmed evaluations by this stage in the count is fewer than the number of candidates to be elected.The winners selected ensure that each voter is as fully represented as possible in the legislature by the candidate they gave their highest grade. However, if a city or state wishes to require the target number of candidates to be elected even when the target number has not been elected by the above steps, the algorithm can be modified to achieve this result. At the same time, note that such a modification could also have the undesirable effect of partially wasting some citizens votes qualitatively.
+The algorithm can be modified as follows:
+Starting with the winning candidate who has the largest number of affirmed evaluations, automatically transfer one ballot chosen by lot to one of the candidates who has not yet received any votes. Do the same with such a ballot currently held by the winner with the second highest number of affirmed evaluations, then the third, etc. If necessary, repeat this action of one at a time transfers until each of the target number of winner has received at least one vote.
+
+***This contingency is not yet implemented.***
