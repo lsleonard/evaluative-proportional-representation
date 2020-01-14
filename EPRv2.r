@@ -1,3 +1,4 @@
+# 12/30/19 LSL descriptive updates for JPR article: Legislatures Elected by EPR: An Algorithm v3
 # 7/18/19 LSL continue vote count until every voter's preferences are allotted to candidates
 # 12/16/18 LSL copied code from 18-11-12-Anders-newAlgorithm.docx
 
@@ -5,8 +6,9 @@
 rm(list = ls())
 set.seed(1)
 
+setwd("/users/stevanleonard/dropbox/Documents/EPR Steve Bosworth/")
 external.data.name <-
-  "epr-min-under-repr2.csv" # required name of input ballot data
+  "epr-voter-data-v2.csv" # required name of input ballot data
 sink(paste("EPRv2-", external.data.name, ".txt", sep="")) # send output to file
 
 current.time <- format(Sys.time(), "%a %b %d %X %Y")
@@ -20,19 +22,18 @@ print("The count is complete by the end of Stage 4.")
 #       to define the operation of the algorithm
 cat("Parameters defined for this run of the algorithm\n")
 cat("Ballot data file:", external.data.name, "\n")
-positions <- 3 # number of open positions to fill with candidates
+positions <- 7 # number of open positions to fill with candidates
 cat("Positions to fill with candidates:", positions, "\n")
 limit.percent <-
   20 # each candidate must transfer votes they receive beyond the limit
 cat("Percentage of votes after which a candidate must transfer votes they receive:", limit.percent, "%\n")
-setwd("/users/stevanleonard/dropbox/Documents/EPR Steve Bosworth/")
 # end of user defined parameters
 
 # Initialize general values and read in voter data
 grades <-
   c("Reject", "Poor", "Acceptable", "Good", "Very good", "Excellent")
 min.affirmed.evaluation <-
-  3 # This value of Acceptable is the minimum value a voter can give a candidate that represents an affirmed evaluation
+  3 # The value of Acceptable is the minimum value a voter can give to help elect a candidate
 Acceptable <- 3 # minimum grade to count
 voter.mat <-
   as.matrix(read.csv(
@@ -61,7 +62,7 @@ if (vote.limit < round(voters / positions)) {
     paste(
       "* * * NOTE: vote.limit set to ",
       vote.limit,
-      "to meet meet minimum set by voters/positions",
+      "to meet minimum set by voters/positions",
       voters,
       "/",
       positions
@@ -89,28 +90,34 @@ candidate.evals.vec1 <-
   replicate(candidates, 0) # sum of selectors by candidate for current round
 council <- names[1:candidates] # list of winners so far
 council.numbers <-
-  1:candidates # list of winner index numbers so far
+  1:candidates # list of candidates (winners) exclusively yet provisionally receiving 
+               # a number of votes (affirmed evaluations) during the current round
 weights.stage1 <-
   replicate(candidates, 0) # affirmed evaluations by candidate
-selectors <- 6 # list of grades currently selecting on
+selectors <- 6 # list of grades (affirmed evaluations) currently selecting on
 selector.add <- 6 # current grade selecting on
 winners_so_far <- 0 # count of winning candidates
 
-# Stage 1: Calculate winners across all candidates by processing most valued for each voter
+# Stage 1: Each round calculates winners across all candidates by counting the 
+# most highly graded candidate by the largest number of voters
 Stage <- 1
 print("Begin Stage 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-cat("Perform an initial count of affirmed evaluations for all candidates. ")
-cat("This count is determined in multiple rounds by giving the candidate ")
-cat("with the most votes at the current grade that number of votes.\n")
+cat("Perform an initial count of all the affirmed evaluations that must be ")
+cat("provisionally yet exclusively counted for each of the candidates. ")
+cat("This count is determined in multiple rounds. When more than one candidate ")
+cat("receives the same grade from the same voter, the candidate who has ")
+cat("the largest number of votes as a result of retaining that grade exclusively ")
+cat("is selected. This is justified by the assumption that the candidate who has the ")
+cat("largest number of same grades or higher is probably the one most qualified for office.\n")
 # define a function for the loop that accumulates votes
 more_voters <- TRUE
 this_round <- 0
 while (more_voters) {
   this_round <- this_round + 1 # i corresponds to the round
   print("*******************************************************")
-  print(paste("ROUND: ", this_round, sep = ""))
+  print(paste("Stage 1, Round ", this_round, sep = ""))
   print("*******************************************************")
-  print("Ballots remaining:")
+  print(paste("Ballots remaining to be counted (", nrow(voter.mat), "):\n", sep="") )
   print(voter.mat)
   print(paste("Selector: ", selectors, " (", grades[selectors], ")", sep =
                 ""))
@@ -130,11 +137,13 @@ while (more_voters) {
     candidate.vec1 == max(candidate.vec1)
   if ((sum(selection) > 0) && (sum(candidate.vec1) > 0)) {
     winner.names <- candidate.names[which(selection)]
-    # In case of tie in count of selectors this selects top by sum of evals
+    # In case of tie in count of selectors (affirmed evaluations), 
+    # first add grades using their ordinal values (Excellent=6..Acceptable=3) using candidate.evals.vec1
+    # If a tie exists with ordinal values, use sample() to randomly select a winner
     topWinnersByEvals <-
       which(max(candidate.evals.vec1[selection]) == candidate.evals.vec1)
-    # in case of tie in both count of selectors and sum of evals, choose by lot
-    # sample returns random choice from equal winners
+    # in case of tie in both count of selectors and sum of oridinal values, choose a winner randomly from top ordinal winners
+    # sample() returns random choice from equal winners
     winner <-
       sample(winner.names[which(winner.names == names[topWinnersByEvals])], size = 1)
     winner_ties <-
@@ -179,10 +188,10 @@ while (more_voters) {
         sep = ""
       )
     )
-    print(paste("Winner number: ", winner.number))
+    print(paste("Winner number (the candidate who received the largest number of affirmed evaluations in the current round): ", winner.number))
     print(
       paste(
-        "Weighted votes by candidate (affirmed evaluations) after round ",
+        "Provisional running totals of votes (affirmed evaluations) received by each candidate after round ",
         this_round,
         ":",
         sep = ""
@@ -227,7 +236,7 @@ while (more_voters) {
 }
 
 if (more_voters) {
-  print("Remaining ballots:")
+  print(paste("Ballots remaining to be counted (", nrow(voter.mat), "):\n", sep="") )
   print(voter.mat)
   notremoved <- NULL
   for (k in 1:dim(voter.mat)[1]) {
@@ -261,6 +270,8 @@ if (more_voters) {
     voter.ind <- which(voter.names %in% rownames(voter.mat)[n])
     voter.candidate[voter.ind] <- "None"
     voter.round[voter.ind] <- "Ballot not countable"
+    print(paste("Uncountable ballot for voter: ",
+      voter.ind))
   }
 }
 for (m in 1:length(council)) {
@@ -275,31 +286,37 @@ print(rbind(candidate.names[council.numbers], weights.stage1))
 
 print("Begin Stage 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
 Stage <- 2
-# apply a percentabe limit by candidate and transfer to next highest candidate of voter
+# apply a percentabe limit, such as 20%, by candidate and transfer to a candidate 
+# with a remaining highest grade from the same voter. Voters are selected randomly.
 weights.stage2 <- weights.stage1
 print(
   paste(
-    "Limit of ",
-    vote.limit,
-    " votes per candidate based on ",
+    "To eliminate the possibility that any winner could receive enough affirmed evaluations ",
+    "(weighted votes) to dictate to the council, this election limits the number of votes a ",
+    "super-popular candidate can retain to ",
     limit.percent,
-    "% of voters (",
+    "%, or ",
+    vote.limit,
+    " of the ",
     voters,
-    ")",
+    " total voters.",
     sep = ""
   )
 )
-cat("During Stage 2, if some of the extra votes initially held by an overly popular candidate ")
+cat("During Stage 2, if some of the extra votes initially held by a super-popular candidate ")
 cat("cannot be automatically transferred, the remaining votes that must be transferred ")
-cat("become proxy votes that must be transferred publicly during the last step in Stage 4 ")
+cat("become proxy votes that are transferred publicly during the last step in Stage 4 ")
 cat(
-  "to any of the other winners judged by the relevant overly popular winner to be most fit for office.\n"
+  "to any of the other eligible winners judged by the relevant super-popular winner to be most fit for office.\n"
 )
-# repeat while overweight candidates
+# repeat while super-popular candidates remain, sorted by candidate with most votes to transfer
+# Note: A future version of the program will select the next super-popular candidate by lot as the order of
+#   candidates does not change the result
 proxy.candidate <- NULL
 xfer.loop <- 0
 while ((max.weight <- max(weights.stage2)) > vote.limit) {
-  # find the candidate with the highest weight (random if more than one)
+  # find the candidate with the highest weight (largest number of affirmed evaluations)
+  # If more than one candidate with the same weight, select randomly
   xfer.loop <- xfer.loop + 1
   print("**********************")
   cat("Stage 2 transfer loop ", xfer.loop, "\n")
@@ -335,7 +352,7 @@ while ((max.weight <- max(weights.stage2)) > vote.limit) {
   # process transfers for transfer.candidate until complete
   # note this might end with proxy votes for some voters if not enough voters
   # marked other candidates or if the candidates they marked have too many votes
-  # Create the set of ballots from this candidate that have a next highest candidate
+  # Create the set of ballots from this candidate that have a remaining highest candidate marked
   voters.to.transfer <- NULL
   voter.candidate.to.transfer <- NULL
   # select voters that match candidate to transfer and have not been marked for transfer
@@ -346,7 +363,7 @@ while ((max.weight <- max(weights.stage2)) > vote.limit) {
         (is.na(voter.transfer[i])))
       voters.to.transfer <- c(voters.to.transfer, i)
   }
-  print("Select from the following voters' ballots:")
+  print("Select from the following voters' ballots that have a remaining highest grade for an eligible candidate:")
   print(voters.to.transfer)
   # select only those voters who voted for this candidate
   voter.mat.stage2 <-
@@ -358,7 +375,7 @@ while ((max.weight <- max(weights.stage2)) > vote.limit) {
   }
   # set grade for this candidate to 0 to remove from selection
   voter.mat.stage2[, transfer.candidate] <- 0
-  # pick the highest remaining candidate for each voter
+  # pick the remaining highest candidate for each voter
   voter.count.stage2 <- length(voters.to.transfer)
   candidates.stage2 <-
     replicate(candidates, 0) # count of candidates
@@ -381,9 +398,9 @@ while ((max.weight <- max(weights.stage2)) > vote.limit) {
       else
         candidate.stage2 <- candidates.equal.stage2
       voter.candidate.to.transfer <-
-        c(voter.candidate.to.transfer, candidate.stage2) # list of next highest graded candidates
+        c(voter.candidate.to.transfer, candidate.stage2) # list of highest graded remaining candidates
       voters.next.highest.graded <-
-        c(voters.next.highest.graded, voters.to.transfer[i]) # list of next highest graded voters
+        c(voters.next.highest.graded, voters.to.transfer[i]) # list of corresponding voters
       print(paste("voter ",
                   voters.to.transfer[i],
                   " candidate ",
@@ -396,15 +413,16 @@ while ((max.weight <- max(weights.stage2)) > vote.limit) {
       candidates.stage2[candidate.stage2] <-
         candidates.stage2[candidate.stage2] + 1
     }
-  } # end for to build candidate weights for overweight candidate
+  } # end of loop that builds list of highest graded remaining candidates and corresponding voters
+    # for super-popular candidates
   candidates.to.ignore <- which(weights.stage2 >= vote.limit)
   candidates.stage2[candidates.to.ignore] <- 0
-  cat("Candidates and their affirmed evaluations that may receive Stage 2 transfers: \n")
+  cat("Candidates and their current affirmed evaluations that may receive Stage 2 transfers from the voters listed above: \n")
   print(rbind(council, candidates.stage2))
   proxy.required <-
     FALSE # must transfer proxy votes if not enough graded votes to transfer
   
-  # loop until all votes from this overweight candidate are transferred or assigned proxy votes
+  # loop until all votes from this super-popular candidate are transferred or determined to be proxy votes
   while (transfer.count > 0) {
     # make sure there are votes to transfer
     if (max(candidates.stage2) == 0) {
@@ -464,7 +482,7 @@ while ((max.weight <- max(weights.stage2)) > vote.limit) {
     transfer.count <- transfer.count - xfer.count
     candidates.stage2[candidate.to.transfer.to] <-
       0 # clear: no longer open for transfer
-    cat("Affirmed evaluations by candidate for loop", xfer.loop, "\n")
+    cat("Affirmed evaluations by voter for candidate for loop", xfer.loop, "of Stage 2\n")
     print(rbind(candidate.names[council.numbers], weights.stage2))
   }
   if (proxy.required) {
@@ -499,7 +517,7 @@ while ((max.weight <- max(weights.stage2)) > vote.limit) {
     print(voters.transferred)
     if (xfer.proxy.count < transfer.count) {
       # in Stage 2, this should never happen as each candidate can assign any number
-      # of their voters as proxy votes. See Stage 3 for implementation of proxy votes
+      # of their voters as proxy votes. See Stage 4 for implementation of proxy votes
       stop("* * * ERROR: candidate does not have enough voters to handle proxy votes")
       # save the default proxy votes for this candidate that could not be transferred
       candidate.proxy.default[transfer.candidate] <-
@@ -526,17 +544,18 @@ print("Begin Stage 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Stage <- 3
 weights.stage3 <- weights.stage2
 candidate.count <- length(which(weights.stage3 != 0))
-cat("Step 1: Determine the elected candidates.\n")
+cat("Step 1: Determine the elected candidates, who are the candidates that received the largest number ")
+cat("of affirmed evaluations by the end of Stage 2.\n")
 cat(
   "Step 2: Transfer votes from unelected candidates to those selected as winning candidates as follows:\n"
 )
 cat(
-  "Starting with the unelected candidate currently holding the largest number of affirmed evaluations, "
-)
+  "Start with the unelected candidate currently holding the largest number of affirmed evaluations, resolving any ties randomly. ")
 cat(
-  "transfer all their votes that can be transferred automatically by the algorithm to any of the winners. "
-)
-cat("If necessary, resolve any ties by lot.\n")
+  "Transfer all votes that can be transferred automatically by the algorithm to any of the eligible winners. ")
+cat("These are ballots that identify an eligible winner with a grade of at least Acceptable. ")
+cat("Ballots that connot be transferred automatically become proxy votes that are handled in Stage 4.\n")
+# NOTE: As the results will be the same, a future version of the algorithm will require the order of these transfers to be determined by lot.
 if (candidate.count < positions) {
   # Contingency 1: fewer candidates than positions to fill
   print(
@@ -548,9 +567,10 @@ if (candidate.count < positions) {
     )
   )
   cat("The number of winners that received affirmed evaluations by this stage in the count ")
-  cat("is fewer than the number of candidates to be elected.")
+  cat("is fewer than the number of candidates to be elected. ")
   cat(
-    "The winners selected ensure that each voter is as fully represented as possible in the legislature "
+    "In this case, these fewer candidates are elected, and they will ensure that each voter ")
+cat("is as fully represented as possible in the legislature "
   )
   cat("by the candidate they gave their highest grade. ")
   cat(
@@ -570,21 +590,21 @@ if (candidate.count < positions) {
     "who has not yet received any votes. Do the same with such a ballot currently held by the winner with the second highest number of affirmed evaluations, "
   )
   cat(
-    "then the third, etc. If necessary, repeat this action of one at a time transfers until each of the target number of winner has received at least one vote.\n"
+    "then the third, etc. If necessary, repeat this action of one at a time transfers until each of the target number of winners has received at least one vote.\n"
   )
   stop("* * * ERROR: This contingency is not yet implemented.\n")
 }
 # select the elected candidates
 candidates.sorted <-
   sort(weights.stage3[which(weights.stage3 != 0)],
-       decreasing = TRUE)
+       decreasing = TRUE) # sort the candidates by larget weight (affirmed evaluations)
 candidates.sorted.index <-
   order(weights.stage3[which(weights.stage3 != 0)],
-        decreasing = TRUE)
+        decreasing = TRUE) # compute the sorted candidates' index (position) within the original weights
 cat("\nStage 3, Step 1: Select the",
     positions,
     "candidates to be elected.\n")
-print("Candidates' affirmed evaluations in descending order and corresponding candidate")
+print("Candidates' affirmed evaluations in descending order and corresponding candidate as received from Stage 2")
 print (rbind(names[candidates.sorted.index], candidates.sorted))
 if (candidate.count > positions) {
   # determine winning candidates
@@ -600,7 +620,7 @@ if (candidate.count > positions) {
       names[positions + candidate.lowest - 1],
       "\n"
     )
-    # must relate this selection back to candidate in index
+    # must relate this selection back to candidate in index, which points to position in original weights
     # for example, if candidate.lowest is 2, then the candidate that corresponds
     #   to the index for second candidate relative to positions
     candidate.lowest.index <-
@@ -614,10 +634,13 @@ if (candidate.count > positions) {
       candidate.index.orig
   }
 }
-print("Winning candidates and weights")
+print("Affirmed evaluations for winning candidates after Step 1 of Stage 3")
 print (rbind(names[candidates.sorted.index[1:positions]], candidates.sorted[1:positions]))
 
-cat("\nStage 3, Step 2: Transfer votes from unelected candidates to elected candidates\n")
+cat("\nStage 3, Step 2: Transfer votes from unelected candidates to elected candidates.\n")
+cat("Start with the unelected candidate with the largest number of votes to transfer. ")
+cat("For ballots that have a remaining highest grade of at least Acceptable for an eligible candidate, ")
+cat("transfer these votes to eligible winners.\n")
 if (candidate.count > positions) {
   # transfer votes from highest weighted unelected candidates until all their votes are transferred
   # repeat until all unelected candidates' votes are transferred
@@ -628,7 +651,9 @@ if (candidate.count > positions) {
   weights.stage3.transfer[candidates.sorted.index[1:positions]] <- 0
   xfer.loop <- 0
   while ((max.weight <- max(weights.stage3.transfer)) > 0) {
-    # find the candidate with the highest weight (random if more than one)
+    # find the candidate with most votes to transfer, ties broken by random selection
+    # Note: A future version of the program will select the next super-popular candidate by lot as the order of
+    #   candidates does not change the result
     xfer.loop <- xfer.loop + 1
     print("**********************")
     cat("Stage 3, Step 2 transfer loop ", xfer.loop, "\n")
@@ -648,15 +673,16 @@ if (candidate.count > positions) {
       paste(
         "Transfer ",
         transfer.count,
-        " votes (highest affirmed evaluations) from unselected candidate ",
+        " votes (remaining highest affirmed evaluations) from unelected candidate ",
         transfer.name,
         sep = ""
       )
     )
-    # process transfers for transfer.candidate until all are transferred
-    # note this might end with proxy votes for some voters if not enough voters
-    #   marked other candidates or if the candidates they marked have too many votes
-    # Create the set of ballots from this candidate that have a next highest candidate
+    # process transfers for transfer.candidate until the number required are transferred
+    # note this automated transfer might end with proxy votes from some voters if not enough voters
+    #   marked other eligible candidates
+    # Create the set of ballots from this candidate that have a remaining highest grade of at least Acceptable
+    # for an eligible candidate
     voters.to.transfer <- NULL
     voter.candidate.to.transfer <- NULL
     # select voters that match candidate to transfer and have not been marked for transfer
@@ -682,13 +708,13 @@ if (candidate.count > positions) {
       for (k in 1:candidates)
         if (! (k %in% candidates.sorted.index[1:positions]))
           voter.mat.stage3[i, k] <- 0
-    # pick the highest remaining candidate for each voter
+    # for each voter, pick the remaining candidate with highest grade
     candidates.stage3 <-
       replicate(candidates, 0) # count of candidates
     # sum the count of candidates that have the highest grade across voters
     voters.stage3 <- NULL
     voters.next.highest.graded <- NULL
-    print("Next highest graded candidate by voter:")
+    print("Remaining highest graded candidate by voter:")
     for (i in 1:voter.count.stage3) {
       selector.max <- max(voter.mat.stage3[i, ]) # highest selector
       if (selector.max >= Acceptable) {
@@ -704,9 +730,9 @@ if (candidate.count > positions) {
         else
           candidate.stage3 <- candidates.equal.stage3
         voter.candidate.to.transfer <-
-          c(voter.candidate.to.transfer, candidate.stage3) # list of next highest graded candidates
+          c(voter.candidate.to.transfer, candidate.stage3) # list of highest graded remaining candidates
         voters.next.highest.graded <-
-          c(voters.next.highest.graded, voters.to.transfer[i]) # list of next highest graded voters
+          c(voters.next.highest.graded, voters.to.transfer[i]) # list of corresponding voters 
         print(paste(
           "voter ",
           voters.to.transfer[i],
@@ -721,15 +747,15 @@ if (candidate.count > positions) {
         candidates.stage3[candidate.stage3] <-
           candidates.stage3[candidate.stage3] + 1
       }
-    } # end for to transfer candidate weights from unelected candidates
+    } # end for loop to transfer candidate votes (weights) from unelected candidates
     candidates.to.ignore <- which(weights.stage3 >= vote.limit)
     if (exists("candidates.to.ignore"))
       candidates.stage3[candidates.to.ignore] <- 0
-    cat("Candidates eligible to receive Stage 3 transfers:\n")
+    cat("Candidates eligible to receive Stage 3 transfers from candidate", transfer.name, "\n")
     print(rbind(council, candidates.stage3))
     proxy.required <-
-      FALSE # must transfer proxy votes if not enough graded votes to transfer
-    # loop until all votes from this unelected candidate are transferred or assigned proxy votes
+      FALSE # must transfer proxy votes if not enough graded votes were found to automatically transfer
+    # loop until all votes from this unelected candidate are transferred or assigned to be proxy votes
     while (transfer.count > 0) {
       # make sure there are votes to transfer
       if (max(candidates.stage3) == 0) {
@@ -795,11 +821,11 @@ if (candidate.count > positions) {
     }
     if (proxy.required) {
       cat(
-        "* * * No more automatic transfer of votes available. Therefore,",
+        "* * * No more automatic transfer of votes available from candidate ", transfer.name, ". Therefore, ",
         transfer.count,
-        " proxy vote(s) required for transfer from candidate ",
+        " proxy vote(s) must be transferred by candidate ",
         transfer.name,
-        "in Stage 4\n"
+        " in Stage 4.\n", sep=""
       )
       voters.to.transfer <- NULL
       # select voters that match candidate to transfer and have not been marked for transfer
@@ -820,9 +846,9 @@ if (candidate.count > positions) {
       cat(
         "Transfer ",
         xfer.proxy.count,
-        " proxy vote(s) from candidate ",
+        "proxy vote(s) from candidate ",
         transfer.name,
-        " from these voters' ballots:",
+        "from these voters' ballots:",
         sort(voters.transferred),
         "\n"
       )
@@ -860,14 +886,14 @@ print("Affirmed evaluations for winning candidates")
 print(rbind(candidate.names[council.numbers], weights.stage3))
 cat("\n")
 print("Begin Stage 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+cat("Stage 4, though not carried out by the algorithm, identifies the proxy votes ")
+cat("determined in Stages 2 and 3 that must be publicly transferred.\n")
 cat("Finalize the weighted votes of each winner as follows:\n")
-cat("Starting with the candidate with the largest number of affirmed evaluations, ")
-cat(
-  "publicly transfer all their proxy votes to any of the winners they find most suitable for office. "
+cat("The candidate with the largest number of affirmed evaluations (ties resolved by lot) ")
+cat("publicly transfers their proxy votes to any of the eligible winners they find most suitable for office. "
 )
-cat("Resolve any ties by lot.\n")
-cat("Continuing with the candidate with the next most affirmed evaluations, ")
-cat("publicly transfer their proxy votes as described for the first candidate to transfer, and continue the process until all proxy votes are transferred.\n")
+cat("Continue the same transfer process with the candidate with the next most affirmed evaluations ")
+cat("until all proxy votes are transferred.\n")
 # accumulate the voters with proxy votes to be transferred
 voter.names.stage4 <- NULL
 voter.candidate.stage4 <- NULL
