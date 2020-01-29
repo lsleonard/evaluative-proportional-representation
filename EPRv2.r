@@ -155,7 +155,7 @@ while (more_voters) {
           file = "",
           sep = " ")
       cat(
-        "Sum of each candidate's ordinal evaluations if counted numerically. Used first to break ties before one of the candidates with the same score is chosen randomly.\n"
+        "Sum of each candidate's ordinal evaluations, counted numerically. Used first to break ties before one of the candidates with the same number of affirmed evaluations is chosen randomly.\n"
       )
       print(candidate.evals.vec1)
       #print("Selection: ")
@@ -309,6 +309,8 @@ cat("become proxy votes that are transferred publicly during the last step in St
 cat(
   "to any of the other eligible winners judged by the relevant super-popular winner to be most fit for office.\n"
 )
+cat("Note: A future version of the algorithm will make the candidate your vote went to in Stage 1 ")
+cat("the owner of your proxy vote, if required.\n")
 # repeat while super-popular candidates remain, sorted by candidate with most votes to transfer
 # Note: A future version of the program will select the next super-popular candidate by lot as the order of
 #   candidates does not change the result
@@ -547,6 +549,9 @@ candidate.count <- length(which(weights.stage3 != 0))
 cat("Step 1: Determine the elected candidates, who are the candidates that received the largest number ")
 cat("of affirmed evaluations by the end of Stage 2.\n")
 cat(
+  "Note: A future version of the algorithm will sum each candidate's ordinal evaluations, counted numerically, and will use this value first to break ties before one of the candidates with the same number of affirmed evaluations is chosen randomly.\n"
+)
+cat(
   "Step 2: Transfer votes from unelected candidates to those selected as winning candidates as follows:\n"
 )
 cat(
@@ -554,7 +559,9 @@ cat(
 cat(
   "Transfer all votes that can be transferred automatically by the algorithm to any of the eligible winners. ")
 cat("These are ballots that identify an eligible winner with a grade of at least Acceptable. ")
-cat("Ballots that connot be transferred automatically become proxy votes that are handled in Stage 4.\n")
+cat("Ballots that connot be transferred automatically become proxy votes of that unelected candidate and are handled in Stage 4.\n")
+cat("Note: A future version of the algorithm will make the candidate your vote went to in Stage 1 ")
+cat("the owner of your proxy vote, if required.\n")
 # NOTE: As the results will be the same, a future version of the algorithm will require the order of these transfers to be determined by lot.
 if (candidate.count < positions) {
   # Contingency 1: fewer candidates than positions to fill

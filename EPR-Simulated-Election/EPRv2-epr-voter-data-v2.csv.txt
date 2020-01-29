@@ -1,5 +1,5 @@
 [1] "EPRv2"
-Tue Jan 14 12:26:30 2020 
+Wed Jan 29 14:28:56 2020 
 [1] "Candidates are elected by voters grading all the candidates using the values: "
 [1] "6=Excellent, 5=Very Good, 4=Good, 3=Acceptable, 2=Poor, 1=Reject."
 [1] "The count is complete by the end of Stage 4."
@@ -710,7 +710,7 @@ Voter 70 1 1 1 1 1 1 1 1 1 1
 council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
 candidate.vec1 "0"  "4"  "0"  "0"  "0"  "0"  "4"  "4"  "3"  "2"  
 Tied winners:  B G H 
-Sum of each candidate's ordinal evaluations if counted numerically. Used first to break ties before one of the candidates with the same score is chosen randomly.
+Sum of each candidate's ordinal evaluations, counted numerically. Used first to break ties before one of the candidates with the same number of affirmed evaluations is chosen randomly.
  [1]  0 24  0  0  0  0 24 24 18 12
 [1] "The winner of round 6 is: H, with 4 affirmed evaluations."
 [1] "Winner number (the candidate who received the largest number of affirmed evaluations in the current round):  8"
@@ -820,7 +820,7 @@ Voter 70 1 1 1 1 1 1 1 1 1 1
 council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
 candidate.vec1 "0"  "4"  "0"  "0"  "0"  "0"  "4"  "0"  "3"  "2"  
 Tied winners:  B G 
-Sum of each candidate's ordinal evaluations if counted numerically. Used first to break ties before one of the candidates with the same score is chosen randomly.
+Sum of each candidate's ordinal evaluations, counted numerically. Used first to break ties before one of the candidates with the same number of affirmed evaluations is chosen randomly.
  [1]  0 24  0  0  0  0 24  0 18 12
 [1] "The winner of round 7 is: G, with 4 affirmed evaluations."
 [1] "Winner number (the candidate who received the largest number of affirmed evaluations in the current round):  7"
@@ -1395,6 +1395,7 @@ weights.stage1 "21" "4"  "11" "8"  "5"  "6"  "4"  "4"  "3"  "2"
 [1] "Begin Stage 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
 [1] "To eliminate the possibility that any winner could receive enough affirmed evaluations (weighted votes) to dictate to the council, this election limits the number of votes a super-popular candidate can retain to 20%, or 14 of the 70 total voters."
 During Stage 2, if some of the extra votes initially held by a super-popular candidate cannot be automatically transferred, the remaining votes that must be transferred become proxy votes that are transferred publicly during the last step in Stage 4 to any of the other eligible winners judged by the relevant super-popular winner to be most fit for office.
+Note: A future version of the algorithm will make the candidate your vote went to in Stage 1 the owner of your proxy vote, if required.
 [1] "**********************"
 Stage 2 transfer loop  1 
 [1] "**********************"
@@ -1506,8 +1507,10 @@ weights.stage2 "14" "11" "11" "8"  "5"  "6"  "4"  "4"  "3"  "2"
 weights.stage2 "14" "11" "11" "8"  "5"  "6"  "4"  "4"  "3"  "2"  
 [1] "Begin Stage 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
 Step 1: Determine the elected candidates, who are the candidates that received the largest number of affirmed evaluations by the end of Stage 2.
+Note: A future version of the algorithm will sum each candidate's ordinal evaluations, counted numerically, and will use this value first to break ties before one of the candidates with the same number of affirmed evaluations is chosen randomly.
 Step 2: Transfer votes from unelected candidates to those selected as winning candidates as follows:
-Start with the unelected candidate currently holding the largest number of affirmed evaluations, resolving any ties randomly. Transfer all votes that can be transferred automatically by the algorithm to any of the eligible winners. These are ballots that identify an eligible winner with a grade of at least Acceptable. Ballots that connot be transferred automatically become proxy votes that are handled in Stage 4.
+Start with the unelected candidate currently holding the largest number of affirmed evaluations, resolving any ties randomly. Transfer all votes that can be transferred automatically by the algorithm to any of the eligible winners. These are ballots that identify an eligible winner with a grade of at least Acceptable. Ballots that connot be transferred automatically become proxy votes of that unelected candidate and are handled in Stage 4.
+Note: A future version of the algorithm will make the candidate your vote went to in Stage 1 the owner of your proxy vote, if required.
 
 Stage 3, Step 1: Select the 7 candidates to be elected.
 [1] "Candidates' affirmed evaluations in descending order and corresponding candidate as received from Stage 2"
