@@ -1,3 +1,4 @@
+# 2/8/20 LSL removed printout of ordinals in Stage 1 as they are unnecessary
 # 12/30/19 LSL descriptive updates for JPR article: Legislatures Elected by EPR: An Algorithm v3
 # 7/18/19 LSL continue vote count until every voter's preferences are allotted to candidates
 # 12/16/18 LSL copied code from 18-11-12-Anders-newAlgorithm.docx
@@ -140,7 +141,8 @@ while (more_voters) {
     # In case of tie in count of selectors (affirmed evaluations), 
     # first add grades using their ordinal values (Excellent=6..Acceptable=3) using candidate.evals.vec1
     # If a tie exists with ordinal values, use sample() to randomly select a winner
-    topWinnersByEvals <-
+    # Note: Future version of algo will not first check the sum of ordinals as they will always be the same in Stage 1
+        topWinnersByEvals <-
       which(max(candidate.evals.vec1[selection]) == candidate.evals.vec1)
     # in case of tie in both count of selectors and sum of oridinal values, choose a winner randomly from top ordinal winners
     # sample() returns random choice from equal winners
@@ -149,15 +151,15 @@ while (more_voters) {
     winner_ties <-
       winner.names[which(winner.names == names[topWinnersByEvals])]
     if (length(winner_ties) > 1) {
-      cat("Tied winners: ",
+      cat("Tied winners to be determined by lot: ",
           winner_ties,
           "\n",
           file = "",
           sep = " ")
-      cat(
-        "Sum of each candidate's ordinal evaluations, counted numerically. Used first to break ties before one of the candidates with the same number of affirmed evaluations is chosen randomly.\n"
-      )
-      print(candidate.evals.vec1)
+#      cat(
+#        "Sum of each candidate's ordinal evaluations, counted numerically. Used first to break ties before one of the candidates with the same number of affirmed evaluations is chosen randomly.\n"
+#      )
+#      print(candidate.evals.vec1)
       #print("Selection: ")
       #print(selection)
     }

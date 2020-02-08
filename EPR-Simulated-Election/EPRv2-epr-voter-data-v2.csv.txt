@@ -1,5 +1,5 @@
 [1] "EPRv2"
-Wed Jan 29 14:28:56 2020 
+Sat Feb 08 11:27:19 2020 
 [1] "Candidates are elected by voters grading all the candidates using the values: "
 [1] "6=Excellent, 5=Very Good, 4=Good, 3=Acceptable, 2=Poor, 1=Reject."
 [1] "The count is complete by the end of Stage 4."
@@ -709,9 +709,7 @@ Voter 70 1 1 1 1 1 1 1 1 1 1
                [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
 council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
 candidate.vec1 "0"  "4"  "0"  "0"  "0"  "0"  "4"  "4"  "3"  "2"  
-Tied winners:  B G H 
-Sum of each candidate's ordinal evaluations, counted numerically. Used first to break ties before one of the candidates with the same number of affirmed evaluations is chosen randomly.
- [1]  0 24  0  0  0  0 24 24 18 12
+Tied winners to be determined by lot:  B G H 
 [1] "The winner of round 6 is: H, with 4 affirmed evaluations."
 [1] "Winner number (the candidate who received the largest number of affirmed evaluations in the current round):  8"
 [1] "Provisional running totals of votes (affirmed evaluations) received by each candidate after round 6:"
@@ -819,9 +817,7 @@ Voter 70 1 1 1 1 1 1 1 1 1 1
                [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
 council        "A"  "B"  "C"  "D"  "E"  "F"  "G"  "H"  "I"  "J"  
 candidate.vec1 "0"  "4"  "0"  "0"  "0"  "0"  "4"  "0"  "3"  "2"  
-Tied winners:  B G 
-Sum of each candidate's ordinal evaluations, counted numerically. Used first to break ties before one of the candidates with the same number of affirmed evaluations is chosen randomly.
- [1]  0 24  0  0  0  0 24  0 18 12
+Tied winners to be determined by lot:  B G 
 [1] "The winner of round 7 is: G, with 4 affirmed evaluations."
 [1] "Winner number (the candidate who received the largest number of affirmed evaluations in the current round):  7"
 [1] "Provisional running totals of votes (affirmed evaluations) received by each candidate after round 7:"
